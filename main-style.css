@@ -1,0 +1,144 @@
+/*
+MAIN CSS FILE FOR ALL PAGES:
+--DOES NOT CONTAIN COLORS
+--IMPORT LINKS
+--STRUCTURE OF PAGES
+--DOES NOT CONTAIN RESPONSIVE
+*/
+
+/*IMPORT*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+/*BODY*/
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*HEADER*/
+.header-index{
+    width: 100%;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index:8;
+    position:fixed;
+    top:0px;
+}
+.headline-image{
+    width: 103px;
+    height: 35px;
+}
+.header-block{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-option{
+    font-size:25px;
+    margin-right: 30px;
+}
+.phone-header{
+    display:none;
+}
+.search-main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.search-main{
+    flex-direction: column;
+}
+.result-item-style{
+    width: 100%;
+    border-left: .5px solid rgb(189, 189, 189);
+    border-right: .5px solid rgb(189, 189, 189);
+    padding-left: 15px;
+    display:flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+.search-index{
+    padding:5px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 10px;
+    text-align: center;
+}
+.search-index:focus{
+    border: 1px solid rgb(189, 189, 189);
+   outline:none;
+}
+.search-results-here{
+    width: 250px;
+    height:200px;
+    overflow: auto;
+    display:none;
+    overflow-x: hidden;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 9;
+    position: absolute;
+    top: 35px;
+    background-color: white;
+    
+}
+.username-name-result{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/*SECTION INDEX PAGE*/
+.section-index{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    position: absolute;
+    top:70px
+}
+
+/*STORY*/
+.swiper1{
+    width: 30%;
+    padding-top:10px;
+    border:1px solid rgb(189, 189, 189);
+    z-index: 2;
+}
+#story-index{
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:0px;
+}
+.swiper-slide{
+    padding:0px;
+}
+.story-content{
+    margin:0px;
+    padding:0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-picture-story{
+    width: 56px;
+    height: 56px;
+}
+.username-story{
+    font-size: 12px;
+    margin-top:5px
+}
