@@ -142,3 +142,186 @@ body{
     font-size: 12px;
     margin-top:5px
 }
+/*POSTS*/
+.posts-index{
+    width: 30%;
+    height: fit-content;
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+/*POST*/
+.post{
+    width: 100%;
+    height:fit-content;
+    margin-top: 20px;
+    border:1px solid rgb(189, 189, 189);
+}
+.post-header,.post-functions{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom:5px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-image-username,.left-functions{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 15px;
+}
+.profile-image{
+    height: 35px;
+    width: 35px;
+}
+.username{
+    font-weight: 800;
+    margin-left: 15px;
+    font-size:15px
+}
+.post-content,.post-image{
+    width: 100%;
+    max-height: 1000px;  
+}
+.icon-functions{
+    margin-left: -15px;
+}
+.left-functions{
+    margin-left: 30px;  
+}
+.liked-info{
+    margin-top:-10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left:10px;
+}
+.thousand{
+    font-weight: 900;  
+}
+.comment-info{
+    width: 90%;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left:15px;
+    margin-top: -15px;
+    display: flex;
+
+}
+.show-all,.period{
+    margin-left:15px;
+    font-size:15px;
+    color:rgb(163, 162, 162);
+}
+.time{
+    margin-top:-10px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:0px;
+}
+.username-profile{
+    margin-left: 0px;
+    display: flex;
+}
+.comment-flex{
+  
+}
+.leav-comment{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-top:1px solid rgb(189, 189, 189);
+}
+.leav-comment-input{
+    border:none;
+    outline:none;
+    margin-left: 5px;
+}
+.leav-comment-input:focus{
+    border:none;
+    outline:none;
+}
+.send-comment{
+    color:rgb(0, 102, 255);
+    margin-right: 10px;
+}
+.translation{
+    font-size:12px;
+    font-weight:bold
+}
+.period{
+    font-size: 12px;
+}
+.hashtags-tags{
+    color:rgb(0, 102, 255);
+}
+.and{
+    margin-left:-55px
+}
+.comment{
+    font-size: 15px;
+}
+/*LIKE ANIMATION*/
+.lds-heart {
+    display: none;
+    position: relative;
+    width: 80px;
+    height: 80px; top: -402px;
+    left: auto;
+    right: auto;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+  }
+  .lds-heart div {
+    position: relative;
+    width: 62px;
+    height: 62px;
+    background: rgb(255, 0, 0);
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .lds-heart div:after,
+  .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 62px;
+    height: 62px;
+    background: rgb(255, 0, 0);
+  }
+  .lds-heart div:before {
+    left: -40px;
+    border-radius: 50% 0 0 50%;
+  }
+  .lds-heart div:after {
+    top: -40px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+    
+  }
