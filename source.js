@@ -189,7 +189,7 @@ var swiper = new Swiper('.swiper1',
                                           username: "offwhite",
                                           profileimage: "./media/offwhite-profile-instagram",
                                           postcontent: "./media/offwhiteinstag",
-                                          likes: "Liked by natureig and thousands of others",
+                                          likes: 5811,
                                           commentContent: "yeezy350",
                                           mention: "Credit:",
                                           mentiontag: "@username_0",
@@ -203,7 +203,7 @@ var swiper = new Swiper('.swiper1',
                                           and:"and",
                                           incl:"thousands of others",
                                           likescountrt:"",
-                                          likeTag:"designer"
+                                          likeTag:"designer",
                                       },
                                       {
                                           username: "natureig",
@@ -404,19 +404,19 @@ function showPosts() {
      for(var i=0;i<post.length;i++) {
       postLocation.innerHTML += `<div class="post">
       <div class="post-header">
-        <div class="profile-image-username">
-          <img src="${post[i].profileimage}.png" alt="" class="profile-image">
+        <div class="profile-image-username" >
+          <img src="${post[i].profileimage}.png" alt="" class="profile-image"   >
           <p class="username">${post[i].username}</p>
         </div>
         <i class="fas fa-ellipsis-v  icon-option"></i>
       </div>
       <div class="post-content">
-        <img src="${post[i].postcontent}.jpg" alt="" class="post-image">
+        <img src="${post[i].postcontent}.jpg" alt="" class="post-image" id="${post[i].idp}" ondblclick="showLikeOnPost(${post[i].idp},${post[i].hrt},${post[i].likes},${post[i].id})">
       </div>
       <div class="post-functions">
         <div class="left-functions">
-          <i class="far fa-heart icon-option icon-functions"></i>
-          <i class="fas fa-heart icon-option icon-functions" style="display:none"></i>
+          <i class="far fa-heart icon-option icon-functions" id="${post[i].likes}" onclick="showLikeOnPost(${post[i].idp},${post[i].hrt},${post[i].likes},${post[i].id})"></i>
+          <i class="fas fa-heart icon-option icon-functions" style="display:none" id="${post[i].id}"></i>
           <i class="far fa-comment icon-option icon-functions"></i>
           <i class="far fa-paper-plane icon-option icon-functions"></i>
         </div>
@@ -440,12 +440,37 @@ function showPosts() {
       <p class="translation">See translation</p>
     </div>
     <div class="leav-comment">
-      <input type="text" name="comment" id="comment-id" autocomplete="off" class="leav-comment-input" placeholder="Leave your comment here...">
+      <input type="text" name="comment"  autocomplete="off" class="leav-comment-input" placeholder="Leave your comment here...">
       <p class="send-comment">Post</p>
     </div>
     </div>
-    <div class="lds-heart"><div></div>`;
+    <div class="lds-heart" id="${post[i].hrt}"><div></div></div></div>`;
      }
 
+     
 }
+
+
+//SHOW POSTS
 showPosts();
+
+
+//FUNCTIONS FOR POSTS
+
+
+//LIKE
+function showLikeOnPost(id,ht,heart, replaceer) {
+    for(var i = 0; i < post.length;i++) {
+      if(post[i].idp === id) {
+    
+        document.getElementById(heart).style.display = "none";
+        document.getElementById(replaceer).style.display = "flex";
+        document.getElementById(replaceer).style.color = "red";
+        document.getElementById(ht).style.display = "flex";
+       setTimeout(() => {
+           document.getElementById(ht).style.display = "none";
+       }, 500);
+      
+    }
+  }
+}
