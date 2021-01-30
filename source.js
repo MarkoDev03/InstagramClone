@@ -1,4 +1,4 @@
-/*HEADER DESKTOP ITEMS*/
+/*-------------------------------------------------HEADER DESKTOP ITEMS-------------------------------------------------*/
 var desktopHeaderIcons = [
   { class: "fa-home", function: "refresh" },
   { class: "fa-comment", function: "messages" },
@@ -15,7 +15,7 @@ function displayDesktopHeaderIcons() {
 }
 displayDesktopHeaderIcons();
 
-/*HEADER MOBILE ICONS*/
+/*-------------------------------------------------HEADER MOBILE ICONS-------------------------------------------------*/
 var mobileHeaderIcons = [
   { class: "fa-heart", function: "liked" },
   { class: "fa-comment", function: "messages" },
@@ -29,7 +29,7 @@ function displayMobileHeaderIcons() {
 }
 displayMobileHeaderIcons();
 
-/*EVENTS IN HEADER*/
+/*-------------------------------------------------EVENTS IN HEADER-------------------------------------------------*/
 function refresh() {
   window.location.href = "index.html";
 }
@@ -46,7 +46,7 @@ function liked() {
   window.location.href = "index.html";
 }
 
-/*SEARCH*/
+/*-------------------------------------------------SEARCH-------------------------------------------------*/
 function showSearch() {
   document.querySelector(
     ".search-main"
@@ -57,7 +57,7 @@ function showSearch() {
 }
 showSearch();
 
-/*SEARCH IN HEADER FUNCTION*/
+/*-------------------------------------------------SEARCH IN HEADER FUNCTION-------------------------------------------------*/
 
 //ARRAY FOR PROFILES
 var accounts = [{username: "offwhite",profile_image: "./media/offwhite-profile-instagram.png",profile_name: "Off White",id: 1,},{username: "natureig",profile_image: "./media/nature.png",profile_name: "🏝Nature🏝",id: 2,},{username: "user_000",profile_image: "./media/username_0.png",profile_name: "Instagram profile",id: 3,},{username: "designer",profile_image: "./media/designer-profile-image-set.png",profile_name: "Design",id: 5,},{username: "plantsig",profile_image: "./media/circle-croppedG.png",profile_name: "🍀plants🍀",id: 4,},{username: "personal",profile_image: "./media/personal-blog-profile-image.png",profile_name: "personalblog",id: 6,},{username: "animals",url: "animals.html",profile_image: "./media/animals.png",profile_name: "Wild Animals",id: 7,},{username: "emoji_ig",url: "emoji_ig.html",profile_image: "./media/smile_profile_image.png",profile_name: "Emojies",id: 8,},];
@@ -141,7 +141,7 @@ searchInHeader.addEventListener('input', (event) => {
     }
 });
  
-/*SOIORTES */
+/*-------------------------------------------------SOIORTES -------------------------------------------------*/
 var stories = [{tittle:"Your story",profileimage:"./media/profile_picture",id:1},{tittle:"user_000",profileimage:"./media/username_0",id:2},{tittle:"natureig",profileimage:"./media/nature",id:3},{tittle:"cars__ig",profileimage:"./media/cars",id:4},{tittle:"animals",profileimage:"./media/animals",id:5 },{tittle:"emoji_ig",profileimage:"./media/smile_profile_image",id:6},{tittle:"videosig",profileimage:"./media/urusprofile_image",id:7},{tittle:"personal",profileimage:"./media/personal-blog-profile-image",id:8},{tittle:"designer",profileimage:"./media/designer-profile-image-set",id:9},{tittle:"offwhite",profileimage:"./media/offwhite-profile-instagram",id:10},{tittle:"plantsig",profileimage:"./media/circle-croppedG",id:11},];
 var content = document.getElementById('story-index');
 function instagramStories() {
@@ -183,294 +183,101 @@ var swiper = new Swiper('.swiper1',
                                           loop: true,
                                           loopFillGroupWithBlank: true,                                                                                  
                                     }});
-                                    
-                                    var post = [
-                                      {
-                                          username: "offwhite",
-                                          profileimage: "./media/offwhite-profile-instagram",
-                                          postcontent: "./media/offwhiteinstag",
-                                          likes: 5811,
-                                          commentContent: "yeezy350",
-                                          mention: "Credit:",
-                                          mentiontag: "@username_0",
-                                          hashatags: "#Instagram #clone  #enjoy #cars #nature #sneakers #design #Instagram #clone #web-design #enjoy #cars #nature #sneakers #design",
-                                          time: "2 h",
-                                          hashatagsurl: "#",
-                                          id: 1,
-                                          idp:11,
-                                          hrt:877787787878,
-                                          ikedbySign:"Liked by",
-                                          and:"and",
-                                          incl:"thousands of others",
-                                          likescountrt:"",
-                                          likeTag:"designer",
-                                      },
-                                      {
-                                          username: "natureig",
-                                          profileimage: "./media/nature",
-                                          postcontent: "./media/nature_picture_1",
-                                          likeheart: "liked_post",
-                                          comment: "comment_post",
-                                          share: "share_post",
-                                          save: "save_post",
-                                          likes: 123.874,
-                                          commentContent: "Beautiful view on ocean from clifs in California",
-                                          mention: "",
-                                          mentiontag: "",
-                                          hashatags: "#Instagram #clone #web-design  #Instagram #clone #web-design #enjoy #cars #nature #sneakers #design",
-                                          time: "2 days",
-                                          threedots: "three_dots",
-                                          url: "nature.html",
-                                          commnetpage: "comments.html",
-                                          hashatagsurl: "#",
-                                          tagedurl: "likedpage.html",
-                                          id: 2,
-                                          idp:21,
-                                          hrt:84894494945,
-                                          ikedbySign:"Liked by",
-                                          and:"and",
-                                          incl:"thousands of others",
-                                          likescountrt:"",
-                                          likeTag:"user_000"
-                                      },
-                                      {
-                                          username: "user_000",
-                                          profileimage: "./media/username_0",
-                                          postcontent: "./media/image_nature_1",                                         
-                                          likes: 789,
-                                          commentContent: "Welcome to Instagram clone by Marko Perovic",
-                                          mention: "Me",
-                                          mentiontag: "@username_0",
-                                          hashatags: "#Instagram #clone #web-design # #clone #web-design #enjoy #cars #nature  #design #Instagram #clone #enjoy #cars #nature #sneakers #design",
-                                          time: "1 week",
-                                          threedots: "three_dots",
-                                          url: "user_0.html",
-                                          commnetpage: "comments.html",
-                                          hashatagsurl: "#",
-                                          tagedurl: "likedpage.html",
-                                          id: 3,
-                                          idp:31,
-                                          hrt:8678879,
-                                          ikedbySign:"",
-                                          and:"",
-                                          incl:"",
-                                          likescountrt:"1.323 Likes",
-                                          likeTag:""
-                                      },
-                                      {
-                                          username: "plantsig",
-                                          profileimage: "./media/circle-croppedG",
-                                          postcontent: "./media/UcQ1Im",
-                                          likeheart: "liked_post",
-                                          comment: "comment_post",
-                                          share: "share_post",
-                                          save: "save_post",
-                                          likes: 9.851,
-                                          commentContent: "Lorem Ipsum is simply dummy  when an  took a galley of type and scrambled it to make a type specimen book. It has",
-                                          mention: "",
-                                          mentiontag: "",
-                                          hashatags: "#web-developing#Instagram#images",
-                                          time: "3 years",
-                                          threedots: "three_dots",
-                                          url: "plantsig.html",
-                                          commnetpage: "comments.html",
-                                          hashatagsurl: "",
-                                          tagedurl: "likedpage.html",
-                                          id: 4,
-                                          idp:41,
-                                          hrt:86958,
-                                          ikedbySign:"",
-                                          and:"",
-                                          incl:"",
-                                          likescountrt:"124 Likes",
-                                          likeTag:""
-                                      },
-                                      {
-                                          username: "designer",
-                                          profileimage: "./media/designer-profile-image-set",
-                                          postcontent: "./media/javasc",
-                                          likeheart: "liked_post",
-                                          comment: "comment_post",
-                                          share: "share_post",
-                                          save: "save_post",
-                                          likes: 151.115,
-                                          commentContent: "Frontend Developing.Lorem Ipsum is  ever since the 1500s, when an uLorem Ipsum is",
-                                          mention: "",
-                                          mentiontag: "@user_0 @animals @cars @deigner_03",
-                                          hashatags: "#web-developing#images#wrappers#colorful #profiles#nature#art#world",
-                                          time: "12 sec",
-                                          threedots: "three_dots",
-                                          url: "designer_03.html",
-                                          commnetpage: "comments.html",
-                                          hashatagsurl: "#",
-                                          tagedurl: "likedpage.html",
-                                          id: 5,
-                                          idp:51,
-                                          hrt:8694,
-                                          ikedbySign:"Liked by",
-                                          and:"and",
-                                          incl:"thousands of others",
-                                          likescountrt:"",
-                                          likeTag:"personal"
-                                      },
-                                      {
-                                          username: "personal",
-                                          profileimage: "./media/personal-blog-profile-image",
-                                          postcontent: "./media/userprof",
-                                          likeheart: "liked_post",
-                                          comment: "comment_post",
-                                          share: "share_post",
-                                          save: "save_post",
-                                          likes: 1235511,
-                                          commentContent: "Small island in middle of oceantext of the ptext ever since the",
-                                          mention: "Follow",
-                                          mentiontag: "@username",
-                                          hashatags: "#nature #instagram #animals #islands#Instagram#images",
-                                          time: "8h",
-                                          threedots: "three_dots",
-                                          url: "personal.html",
-                                          commnetpage: "comments.html",
-                                          hashatagsurl: "#",
-                                          tagedurl: "likedpage.html",
-                                          id: 6,
-                                          idp:61,
-                                          hrt:78869,
-                                          ikedbySign:"Liked by",
-                                          and:"and",
-                                          incl:"thousands of others",
-                                          likescountrt:"",
-                                          likeTag:"carsig"
-                                      },
-                                      {
-                                          username: "animals",
-                                          profileimage: "./media/animals",
-                                          postcontent: "./media/tags_animals",
-                                          likeheart: "liked_post",
-                                          comment: "comment_post",
-                                          share: "share_post",
-                                          save: "save_post",
-                                          likes: 1484,
-                                          commentContent: "JAGUAR😀🍀🏝💯🎵🕡👍Lorem Ipsum is simply dummy , took a galley of type Ipsum is simply dummy text of the ptext ever since the 1500s,",
-                                          mention: "",
-                                          mentiontag: "",
-                                          hashatags: "#Instagram#images#wrappers#colorful #profiles#nature#design#art#world#life",
-                                          time: "1h",
-                                          threedots: "three_dots",
-                                          url: "animals.html",
-                                          commnetpage: "comments.html",
-                                          hashatagsurl: "#",
-                                          tagedurl: "likedpage.html",
-                                          id: 7,
-                                          idp:71,
-                                          hrt:77,
-                                          ikedbySign:"",
-                                          and:"",
-                                          incl:"",
-                                          likescountrt:"834.782 Likes",
-                                          likeTag:""
-                                      },
-                                      {
-                                          username: "emoji_ig",
-                                          profileimage: "./media/smile_profile_image",
-                                          postcontent: "./media/smiles",
-                                          likeheart: "liked_post",
-                                          comment: "comment_post",
-                                          share: "share_post",
-                                          save: "save_post",
-                                          likes: 22332,
-                                          commentContent: "🍀🏝💯🎵👍😀🕡 😀🍀🏝",
-                                          mention: "",
-                                          mentiontag: "",
-                                          hashatags: "#Instagram#images#wrappers#colorful ",
-                                          time: "12 min",
-                                          threedots: "three_dots",
-                                          url: "emoji_ig.html",
-                                          commnetpage: "comments.html",
-                                          hashatagsurl: "#",
-                                          tagedurl: "likedpage.html",
-                                          id: 8,
-                                          idp:81,
-                                          hrt:58158,
-                                          ikedbySign:"Liked by",
-                                          and:"and",
-                                          incl:"thousands of others",
-                                          likescountrt:"",
-                                          likeTag:"plantsig"
-                                      },
-                                  ];
+/*------------------------------------------------- POST ARRAY ------------------------------------------------- */                 
 
-var postLocation = document.querySelector('.posts-index');
-function showPosts() {
-     for(var i=0;i<post.length;i++) {
-      postLocation.innerHTML += `<div class="post">
-      <div class="post-header">
-        <div class="profile-image-username" >
-          <img src="${post[i].profileimage}.png" alt="" class="profile-image"   >
-          <p class="username">${post[i].username}</p>
-        </div>
-        <i class="fas fa-ellipsis-v  icon-option"></i>
-      </div>
-      <div class="post-content">
-        <img src="${post[i].postcontent}.jpg" alt="" class="post-image" id="${post[i].idp}" ondblclick="showLikeOnPost(${post[i].idp},${post[i].hrt},${post[i].likes},${post[i].id})">
-      </div>
-      <div class="post-functions">
-        <div class="left-functions">
-          <i class="far fa-heart icon-option icon-functions" id="${post[i].likes}" onclick="showLikeOnPost(${post[i].idp},${post[i].hrt},${post[i].likes},${post[i].id})"></i>
-          <i class="fas fa-heart icon-option icon-functions" style="display:none" id="${post[i].id}"></i>
-          <i class="far fa-comment icon-option icon-functions"></i>
-          <i class="far fa-paper-plane icon-option icon-functions"></i>
-        </div>
-        <i class="far fa-bookmark icon-option"></i>
-        <i class="fas fa-bookmark icon-option" style="display:none"></i>
-      </div>
-      <div class="liked-info">
-        <p class="liked-text">${post[i].ikedbySign}	&nbsp;</p><p class="thousand">${post[i].likescountrt}  ${post[i].likeTag}&nbsp;</p><p>${post[i].and}&nbsp;</p><p class="thousand">${post[i].incl}</p><p></p><p class=""></p>
-      </div>
-      <div class="comment-info">
-       <p class="username username-profile">${post[i].username}	&nbsp;</p>
-      <div class="comment-flex">
-      <p class="comment">${post[i].commentContent}</p>
-      <p class="hashtags-tags">${post[i].hashatags}</p>
-      </div>
-      </div>
-    <p class="show-all">Show all comments (15)</p>
-    <div class="time">
-      <p class="period">${post[i].time} ago</p>
-      <p>&nbsp;·&nbsp;</p>
-      <p class="translation">See translation</p>
-    </div>
-    <div class="leav-comment">
-      <input type="text" name="comment"  autocomplete="off" class="leav-comment-input" placeholder="Leave your comment here...">
-      <p class="send-comment">Post</p>
-    </div>
-    </div>
-    <div class="lds-heart" id="${post[i].hrt}"><div></div></div></div>`;
+ var postLocation = document.querySelector('.posts-index');
+
+ /*GET ALL DATA FROM DATABASE FOR POSTS*/
+ class DataProvider{
+ 
+   //FUNCTION FOR GETTING DATA FOR POSTS
+   async getData() {
+     try {
+       let dataBase = await fetch('data.json');
+       let data = await dataBase.json();
+       let post = data.posts;
+       post = post.map(item => {
+         let username = item.username;let profileimage = item.profileimage;let postcontent = item.postcontent;let likes = item.likes;let commentContent = item.commentContent;let mention = item.mention;let mentiontag = item.mentiontag;let hashatags = item.hashatags;let time = item.time;let idp = item.idp;let id = item.id;let hrt = item.hrt;let ikedbySign = item.ikedbySign;let and = item.and;let incl = item.incl;let likescountrt = item.likescountrt;let likeTag = item.likeTag;let hashatagsurl = item.hashatagsurl;
+         return {username,profileimage,postcontent,likes,commentContent,mention,mentiontag,hashatags,time,idp,id,hrt,ikedbySign,and,incl,likescountrt,likeTag,hashatagsurl};
+       });
+       console.log(post);
+       return post;
      }
+        catch (error) {
+       console.log(error);
+     }finally{
+       console.log("Connection with database successed");
+     }
+   }
+ }
+ 
+ /*UI CLASS FOR ALL POSTS */
+ class UiForPosts{
+ 
+   //SHOW POSTS ON WEB-PAGE
+   displayPosts(posts) {
+     let result = '';
+     posts.forEach(post => {
+        result +=`<div class="post">
+       <div class="post-header">
+         <div class="profile-image-username" >
+           <img src="${post.profileimage}.png" alt="" class="profile-image"   >
+           <p class="username">${post.username}</p>
+         </div>
+         <i class="fas fa-ellipsis-v  icon-option" onclick="reportPost(${post.id})"></i>
+       </div>
+       <div class="post-content">
+         <img src="${post.postcontent}.jpg" alt="" class="post-image" id="${post.idp}" ondblclick="showLikeOnPost(${post.hrt},${post.likes},${post.id})">
+       </div>
+       <div class="post-functions">
+         <div class="left-functions">
+           <i class="far fa-heart icon-option icon-functions" id="${post.likes}" onclick="showLikeOnPost(${post.hrt},${post.likes},${post.id})"></i>
+           <i class="fas fa-heart icon-option icon-functions" style="display:none" id="${post.id}"></i>
+           <i class="far fa-comment icon-option icon-functions"></i>
+           <i class="far fa-paper-plane icon-option icon-functions"></i>
+         </div>
+         <i class="far fa-bookmark icon-option"></i>
+         <i class="fas fa-bookmark icon-option" style="display:none"></i>
+       </div>
+       <div class="liked-info">
+         <p class="liked-text">${post.ikedbySign}	&nbsp;</p><p class="thousand">${post.likescountrt}  ${post.likeTag}&nbsp;</p><p>${post.and}&nbsp;</p><p class="thousand">${post.incl}</p><p></p><p class=""></p>
+       </div><br>
+       <div class="comment-info">
+       <div>    
+       <span class="comment"><span class="username username-profile">${post.username} 	&nbsp;</span>${post.commentContent}</span>
+       <span class="hashtags-tags">${post.hashatags}</span>
+       </div>
+       </div>
+     <p class="show-all">Show all comments (15)</p>
+     <div class="time">
+       <p class="period">${post.time} ago</p>
+       <p>&nbsp;·&nbsp;</p>
+       <p class="translation">See translation</p>
+     </div>
+     <div class="leav-comment">
+       <input type="text" name="comment"  autocomplete="off" class="leav-comment-input" placeholder="Leave your comment here...">
+       <p class="send-comment">Post</p>
+     </div>
+     </div>
+     <div class="lds-heart" id="${post.hrt}"><div></div></div></div>`;
+     });
+     postLocation.innerHTML = result;
+   }
+ }
 
-     
-}
+ 
+   let data = new DataProvider();
+   let ui = new UiForPosts();
+   data.getData().then(data => ui.displayPosts(data));
+ 
 
 
-//SHOW POSTS
-showPosts();
-
-
-//FUNCTIONS FOR POSTS
-
-
-//LIKE
-function showLikeOnPost(id,ht,heart, replaceer) {
-    for(var i = 0; i < post.length;i++) {
-      if(post[i].idp === id) {
-    
-        document.getElementById(heart).style.display = "none";
-        document.getElementById(replaceer).style.display = "flex";
-        document.getElementById(replaceer).style.color = "red";
-        document.getElementById(ht).style.display = "flex";
-       setTimeout(() => {
-           document.getElementById(ht).style.display = "none";
-       }, 500);
-      
-    }
-  }
+ function showLikeOnPost(heartIcon,heartFont, likedHeartFont) {
+      document.getElementById(heartFont).style.display = "none";
+      document.getElementById(likedHeartFont).style.display = "flex";
+      document.getElementById(likedHeartFont).style.color = "red";
+      document.getElementById(heartIcon).style.display = "flex";
+     setTimeout(() => {
+         document.getElementById(heartIcon).style.display = "none";
+     }, 500);
 }
