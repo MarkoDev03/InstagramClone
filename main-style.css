@@ -209,8 +209,9 @@ body{
     padding-top:5px;
     padding-bottom:5px;
     margin-left:15px;
-    margin-top: -15px;
-    display: flex;
+    margin-top: -30px;
+    display:flex;
+   
 
 }
 .show-all,.period{
@@ -228,7 +229,6 @@ body{
 }
 .username-profile{
     margin-left: 0px;
-    display: flex;
 }
 
 .leav-comment{
@@ -242,6 +242,9 @@ body{
     border:none;
     outline:none;
     margin-left: 5px;
+}
+.comment-flex{
+    display: flex;
 }
 .leav-comment-input:focus{
     border:none;
@@ -272,10 +275,10 @@ body{
     display: none;
     position: relative;
     width: 80px;
-    height: 80px; top: -402px;
+    height: 80px; 
     left: auto;
     right: auto;
-    top:-500px;
+    top:-450px;
     transform: rotate(45deg);
     transform-origin: 40px 40px;
   }
@@ -345,6 +348,9 @@ body{
           transform: scale(1);
         }
       }
-    
+.hide-heart-for-like{
+    display:none;
+    color:Red;
+}
     
   
