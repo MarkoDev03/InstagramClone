@@ -190,7 +190,7 @@ searchInHeader.addEventListener("input", (event) => {
   }
 });
 
-/*--------------------------------------------------- POSTS ---------------------------------------------------------*/
+/*------------------------------------------------------ POSTS & STORIES -----------------------------------------------------------*/
 
 var postLocation = document.querySelector(".posts-index");
 var storyLocation = document.getElementById("story-index");
@@ -201,8 +201,8 @@ class DataProvider {
   //GET DATA FOR POSTS
   async getData() {
     try {
-      
-      let provideData = await fetch("data.json");
+      let API = "data.json";
+      let provideData = await fetch(API);
       let data = await provideData.json();
       let post = data.posts;
       post = post.map((item) => {
@@ -212,6 +212,7 @@ class DataProvider {
       return post;
     } catch (error) {
       console.log(error);
+      alert(error);
     } finally {
       console.log("Connection with database successed");
     }
@@ -220,7 +221,8 @@ class DataProvider {
   //GET DATA FOR STORIES
   async getStories() {
    try{
-    let provideData = await fetch('stories.json');
+    let API = "stories.json";
+    let provideData = await fetch(API);
     let data = await provideData.json();
     let story = data.storiesArray;
     story = story.map(item => {
@@ -230,8 +232,11 @@ class DataProvider {
     return story;
    }
    catch(error){
+    console.log(error);
+    alert(error);
+   }finally {
     console.log("Connection with database successed");
-   }
+  }
   }
 
 }
@@ -271,10 +276,9 @@ class showContentOnPagesWhenLoadedClass {
          1920: {slidesPerView: 7,spaceBetween: 5,},
     loop: true,
         loopFillGroupWithBlank: true,
-  },
-});
-
-  }
+       },
+     });
+    }
 
 }
 
