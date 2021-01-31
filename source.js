@@ -221,7 +221,7 @@ class DataProvider {
   //GET DATA FOR STORIES
   async getStories() {
    try{
-    let API = "stories.json";
+    let API = "data.json";
     let provideData = await fetch(API);
     let data = await provideData.json();
     let story = data.storiesArray;
@@ -270,8 +270,8 @@ class showContentOnPagesWhenLoadedClass {
          400: {slidesPerView: 5,spaceBetween: 5,},
          402: {slidesPerView: 5,spaceBetween: 10,},
          640: {slidesPerView: 5,spaceBetween: 20,},
-         768: {slidesPerView: 6,spaceBetween: 40,},
-         1024: {slidesPerView: 7,spaceBetween: 50,},
+         768: {slidesPerView: 5,spaceBetween: 40,},
+         1024: {slidesPerView: 7,spaceBetween: 5,},
          1400: {slidesPerView: 7,spaceBetween: 5,},
          1920: {slidesPerView: 7,spaceBetween: 5,},
     loop: true,
@@ -304,4 +304,9 @@ function showLikeOnPost(heartIcon,heartFont, likedHeartFont) {
  setTimeout(() => {
      document.getElementById(heartIcon).style.display = "none";
  }, 500);
+}
+
+//REPORT POST
+function reportPost() {
+  let reportPopUp = document.getElementById('');
 }

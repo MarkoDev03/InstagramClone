@@ -220,5 +220,62 @@
             "likeTag":"plantsig",
             "likeinfo":842
         }
+        ], "storiesArray": [
+            { 
+                "title": "Your story",
+                "profileimage": "./media/profile_picture",
+                "id": 1
+            },
+            { 
+                "title": "user_000",
+                "profileimage": "./media/username_0", 
+                "id": 2
+            },
+            { 
+                "title": "natureig",
+                "profileimage": "./media/nature",
+                "id": 3
+            },
+            {
+                "title": "cars__ig",
+                "profileimage": "./media/cars",
+                "id": 4
+            },
+            { 
+                "title": "animals",
+                "profileimage": "./media/animals",
+                "id": 5
+            },
+            { 
+                "title": "emoji_ig",
+                "profileimage": "./media/smile_profile_image",
+                "id": 6
+            },
+            { 
+                "title": "videosig",
+                "profileimage": "./media/urusprofile_image", 
+                "id": 7
+            },
+            {
+                "title": "personal",
+                "profileimage": "./media/personal-blog-profile-image",
+                "id": 8
+            },
+            {
+                "title": "designer",
+                "profileimage": "./media/designer-profile-image-set",
+                "id": 9
+            },
+            {
+                "title": "offwhite",
+                "profileimage": "./media/offwhite-profile-instagram",
+                "id": 10
+            },
+            { 
+                "title": "plantsig",
+                "profileimage": "./media/circle-croppedG",
+                "id": 11
+            }
         ]
+
 }
