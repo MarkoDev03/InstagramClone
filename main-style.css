@@ -10,14 +10,14 @@ MAIN CSS FILE FOR ALL PAGES:
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 
-/*BODY*/
+/*---------------------------------------BODY---------------------------------------*/
 body{
     margin:0px;
     padding: 0px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-/*HEADER*/
+/*---------------------------------------HEADER---------------------------------------*/
 .header-index{
     width: 100%;
     border-bottom: 1px solid rgb(189, 189, 189);
@@ -98,7 +98,7 @@ body{
     flex-direction: column;
 }
 
-/*SECTION INDEX PAGE*/
+/*----------------------------------------SECTION INDEX PAGE/*----------------------------------------*/
 .section-index{
     width: 100%;
     height: fit-content;
@@ -110,9 +110,9 @@ body{
     top:70px
 }
 
-/*STORY*/
+/*---------------------------------------STORY---------------------------------------*/
 .swiper1{
-    width: 30%;
+    width: 550px;
     padding-top:10px;
     border:1px solid rgb(189, 189, 189);
     z-index: 2;
@@ -142,9 +142,9 @@ body{
     font-size: 12px;
     margin-top:5px
 }
-/*POSTS*/
+/*---------------------------------------POSTS---------------------------------------*/
 .posts-index{
-    width: 30%;
+    width: 550px;
     height: fit-content;
     margin-top:20px;
     display:flex;
@@ -153,7 +153,7 @@ body{
     flex-direction: column;
     z-index: 2;
 }
-/*POST*/
+/*---------------------------------------POST---------------------------------------*/
 .post{
     width: 100%;
     height:fit-content;
@@ -185,7 +185,9 @@ body{
 }
 .post-content,.post-image{
     width: 100%;
-    max-height: 1000px;  
+    max-height: 500px; 
+    position: relative;
+    display: block;
 }
 .icon-functions{
     margin-left: -15px;
@@ -211,16 +213,19 @@ body{
     margin-left:15px;
     margin-top: -30px;
     display:flex;
-   
-
 }
 .show-all,.period{
     margin-left:15px;
     font-size:15px;
     color:rgb(163, 162, 162);
 }
-.time{
+.bottom-post{
     margin-top:-10px;
+    display:flex;
+    flex-direction: column;
+}
+.time{
+    margin-top:-30px;
     width: fit-content;
     display: flex;
     justify-content: space-around;
@@ -238,17 +243,13 @@ body{
     align-items: center;
     border-top:1px solid rgb(189, 189, 189);
 }
-.leav-comment-input{
+.leav-comment-input,.leav-comment-input:focus{
     border:none;
     outline:none;
     margin-left: 5px;
 }
 .comment-flex{
     display: flex;
-}
-.leav-comment-input:focus{
-    border:none;
-    outline:none;
 }
 .send-comment{
     color:rgb(0, 102, 255);
@@ -270,15 +271,14 @@ body{
 .comment{
     font-size: 15px;
 }
-/*LIKE ANIMATION*/
+/*---------------------------------------LIKE ANIMATION---------------------------------------*/
 .lds-heart {
     display: none;
-    position: relative;
+    position: absolute;
+    bottom: 50%;
     width: 80px;
     height: 80px; 
-    left: auto;
-    right: auto;
-    top:-450px;
+    left: 40%;
     transform: rotate(45deg);
     transform-origin: 40px 40px;
   }
@@ -352,5 +352,16 @@ body{
     display:none;
     color:Red;
 }
-    
-  
+/*---------------------------------------FOOTER---------------------------------------*/
+.footer-index{
+    width: 100%;
+    border-top: 1px solid rgb(189, 189, 189);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    z-index:8;
+    position:fixed;
+    bottom:0px;
+}

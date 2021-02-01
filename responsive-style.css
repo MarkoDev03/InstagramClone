@@ -5,16 +5,89 @@
     .profile-picture-story{
         width: 50px;
         height: 50px;
-    }
-    .swiper1{
-        width: 40%;
-    }
-
-    /*POST*/
-    .posts-index{
-        width: 40%;
-    }
+    }   
     .leav-comment{
         height: 40px;
     }
+    
 }
+/*--------------------------------------------------RESPONSIVE FOR: 600-400-----------------------------------------------------*/
+@media only screen and (max-width:600px) and (min-width:300px) {
+    
+    /*STORY*/
+    .profile-picture-story{
+        width: 65px;
+        height: 65px;
+    }   
+    .leav-comment{
+        height: 40px;
+    }
+    /*HEADER*/
+    .pc-header,.search-main{
+        display:none;
+    }
+    .phone-header{
+        display: flex;
+        margin-right: -15px;
+    }
+    .header-index{
+        justify-content: space-between;
+    }
+    .headline-image{ 
+        margin-left: 10px;
+        margin-top: 5px;
+    }   
+    .header-index{
+      padding-top: 0px;
+      padding-bottom:0px;
+      border-bottom:0.1px solid rgb(224, 224, 224);
+    }
+
+    /*MAIN CONTENT*/
+    .swiper1,.section-index,.posts-index{
+        width: 100%;
+        border:none;
+    }
+    .swiper1{
+        margin-top: -10px;
+    }
+    #story-index{
+        padding-top:0px;
+        padding-left:0px;
+        padding-right:0px;
+        padding-bottom:0px;
+    }
+    .post{
+        width: 100%;
+        height:fit-content;
+        margin-top: 0px;
+        border:none;
+    }
+    .leav-comment{
+        display:none;
+    }
+    .liked-info{
+        margin-top:-10px;
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left:10px;
+    }
+    .posts-index{
+        border-top:0.1px solid rgb(224, 224, 224);
+        margin-top: 1px;
+    }
+    .post-header{
+        padding-top: 1px;
+        padding-bottom:1px
+    }
+
+    /*FOOTER*/
+    .footer-index{
+        display: flex;
+    }
+    
+}
+
+

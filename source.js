@@ -1,12 +1,12 @@
-/*-------------------------------------------------HEADER DESKTOP ITEMS-------------------------------------------------*/
+/*-------------------------------------------------HEADER DESKTOP ITEMS--------------------------------------------------------------*/
 
 //FONTAWESOME ICONS FOR HEADER
 var desktopHeaderIcons = [
-  { class: "fa-home", function: "refresh" },
-  { class: "fa-comment", function: "messages" },
-  { class: "fa-compass", function: "compass" },
-  { class: "fa-heart", function: "liked" },
-  { class: "fa-user-circle", function: "profile" },
+  { class: "fas fa-home", function: "refresh" },
+  { class: "far fa-comment", function: "messages" },
+  { class: "far fa-compass", function: "compass" },
+  { class: "far fa-heart", function: "liked" },
+  { class: "far fa-user-circle", function: "profile" },
 ];
 
 //SHOW HEADER FOR DESKTOP DEVICES
@@ -14,19 +14,19 @@ function displayDesktopHeaderIcons() {
   for (var i = 0; i < desktopHeaderIcons.length; i++) {
     document.querySelector(
       ".pc-header"
-    ).innerHTML += `<i class="far ${desktopHeaderIcons[i].class} icon-option" onclick="${desktopHeaderIcons[i].function}()"></i>`;
+    ).innerHTML += `<i class="${desktopHeaderIcons[i].class} icon-option" onclick="${desktopHeaderIcons[i].function}()"></i>`;
   }
 }
 
 //CALL FUNCTION
 displayDesktopHeaderIcons();
 
-/*-------------------------------------------------HEADER MOBILE ICONS-------------------------------------------------*/
+/*-------------------------------------------------HEADER MOBILE ICONS---------------------------------------------------------------*/
 
 //FONTAWESOME ARRAY FOR CELL-PHONE HEADER ITEMS
 var mobileHeaderIcons = [
-  { class: "fa-heart", function: "liked" },
-  { class: "fa-comment", function: "messages" },
+  { class: "fa-heart phone-icons", function: "liked" },
+  { class: "fa-comment phone-icons", function: "messages" },
 ];
 
 //RESPONSIVE HEADER FOR CELL-PHONES
@@ -34,13 +34,13 @@ function displayMobileHeaderIcons() {
   for (var i = 0; i < mobileHeaderIcons.length; i++) {
     document.querySelector(
       ".phone-header"
-    ).innerHTML += `<i class="far ${desktopHeaderIcons[i].class} icon-option" onclick="${desktopHeaderIcons[i].function}()"></i>`;
+    ).innerHTML += `<i class="far ${mobileHeaderIcons[i].class} icon-option" onclick="${mobileHeaderIcons[i].function}()"></i>`;
   }
 }
 
 //CALL FUNCTION
 displayMobileHeaderIcons();
-/*-------------------------------------------------EVENTS IN HEADER-------------------------------------------------*/
+/*-------------------------------------------------EVENTS IN HEADER------------------------------------------------------------------*/
 
 //REFRESH PAGE OR TURN BACK TO INDEX.HTML
 function refresh() {
@@ -67,7 +67,7 @@ function liked() {
   window.location.href = "index.html";
 }
 
-/*-------------------------------------------------SEARCH IN HEADER-------------------------------------------------*/
+/*---------------------------------------------------------SEARCH IN HEADER----------------------------------------------------------*/
 
 //DISPLAY SEARCH BAR
 function showSearch() {
@@ -82,7 +82,7 @@ function showSearch() {
 //CALL FUNCTION
 showSearch();
 
-/*-------------------------------------------------SEARCH IN HEADER FUNCTION-------------------------------------------------*/
+/*-------------------------------------------------------SEARCH IN HEADER FUNCTION---------------------------------------------------*/
 
 //ARRAY FOR PROFILES
 var accounts = [{username: "offwhite",profile_image: "./media/offwhite-profile-instagram.png",profile_name: "Off White",id: 1,},{username: "natureig",profile_image: "./media/nature.png",profile_name: "🏝Nature🏝",id: 2,},{username: "user_000",profile_image: "./media/username_0.png",profile_name: "Instagram profile",id: 3,},{username: "designer",profile_image: "./media/designer-profile-image-set.png",profile_name: "Design",id: 5,},{username: "plantsig",profile_image: "./media/circle-croppedG.png",profile_name: "🍀plants🍀",id: 4,},{username: "personal",profile_image: "./media/personal-blog-profile-image.png",profile_name: "personalblog",id: 6,},{username: "animals",url: "animals.html",profile_image: "./media/animals.png",profile_name: "Wild Animals",id: 7,},{username: "emoji_ig",url: "emoji_ig.html",profile_image: "./media/smile_profile_image.png",profile_name: "Emojies",id: 8,},];
@@ -248,7 +248,7 @@ class showContentOnPagesWhenLoadedClass {
   displayPosts(posts) {
     let result = "";
     posts.forEach((post) => {
-      result += `<div class="post"><div class="post-header"><div class="profile-image-username" ><img src="${post.profileimage}.png" alt="" class="profile-image"><p class="username">${post.username}</p></div><i class="fas fa-ellipsis-v  icon-option" onclick="reportPost()"></i></div><div class="post-content"><img src="${post.postcontent}.jpg" alt="" class="post-image" id="${post.idp}" ondblclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"></div><div class="post-functions"><div class="left-functions"><i class="far fa-heart icon-option icon-functions" id="${post.likes}" onclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"></i>  <i style="display:none" class="fas fa-heart icon-option icon-functions hide-heart-for-like" id="${post.likeinfo}"></i><i class="far fa-comment icon-option icon-functions"></i><i class="far fa-paper-plane icon-option icon-functions"></i></div><i class="far fa-bookmark icon-option"></i><i class="fas fa-bookmark icon-option" style="display:none"></i></div><div class="liked-info"><p class="liked-text">${post.ikedbySign}	&nbsp;</p><p class="thousand">${post.likescountrt}  ${post.likeTag}&nbsp;</p><p>${post.and}&nbsp;</p><p class="thousand">${post.incl}</p><p></p><p class=""></p></div><br><div class="comment-info"><div><span class="comment"><span class="username username-profile">${post.username} 	&nbsp;</span>${post.commentContent}</span><span class="hashtags-tags">${post.hashatags}</span></div></div><p class="show-all">Show all comments (15)</p><div class="time"><p class="period">${post.time} ago</p><p>&nbsp;·&nbsp;</p><p class="translation">See translation</p></div><div class="leav-comment"><input type="text" name="comment"  autocomplete="off" class="leav-comment-input" placeholder="Leave your comment here..."><p class="send-comment">Post</p></div></div><div class="lds-heart" id="${post.hrt}"><div></div></div></div>`;
+      result += `<div class="post"><div class="post-header"><div class="profile-image-username" ><img src="${post.profileimage}.png" alt="" class="profile-image"><p class="username">${post.username}</p></div><i class="fas fa-ellipsis-v  icon-option" onclick="reportPost()"></i></div><div class="post-content"><img src="${post.postcontent}.jpg" alt="" class="post-image" id="${post.idp}" ondblclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"><div class="lds-heart" id="${post.hrt}"><div></div></div></div><div class="post-functions"><div class="left-functions"><i class="far fa-heart icon-option icon-functions" id="${post.likes}" onclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"></i>  <i style="display:none" class="fas fa-heart icon-option icon-functions hide-heart-for-like" id="${post.likeinfo}"></i><i class="far fa-comment icon-option icon-functions"></i><i class="far fa-paper-plane icon-option icon-functions"></i></div><i class="far fa-bookmark icon-option"></i><i class="fas fa-bookmark icon-option" style="display:none"></i></div><div class="liked-info"><p class="liked-text">${post.ikedbySign}	&nbsp;</p><p class="thousand">${post.likescountrt}  ${post.likeTag}&nbsp;</p><p>${post.and}&nbsp;</p><p class="thousand">${post.incl}</p><p></p></div><br><div class="comment-info"><div><span class="comment"><span class="username username-profile">${post.username} 	&nbsp;</span>${post.commentContent}</span><span class="hashtags-tags">${post.hashatags}</span></div></div><div class="bottom-post"><p class="show-all">Show all comments (15)</p><div class="time"><p class="period">${post.time} ago</p><p>&nbsp;·&nbsp;</p><p class="translation">See translation</p></div></div><div class="leav-comment"><input type="text" name="comment"  autocomplete="off" class="leav-comment-input" placeholder="Leave your comment here..."><p class="send-comment">Post</p></div></div></div>`;
     });
     postLocation.innerHTML = result;
   }
@@ -266,7 +266,7 @@ class showContentOnPagesWhenLoadedClass {
   slidesPerView: 1,
     spaceBetween: 10,
       breakpoints: {
-         360: {slidesPerView: 4.5,spaceBetween: 0,},
+         360: {slidesPerView: 5,spaceBetween: 5,},
          400: {slidesPerView: 5,spaceBetween: 5,},
          402: {slidesPerView: 5,spaceBetween: 10,},
          640: {slidesPerView: 5,spaceBetween: 20,},
@@ -310,3 +310,26 @@ function showLikeOnPost(heartIcon,heartFont, likedHeartFont) {
 function reportPost() {
   let reportPopUp = document.getElementById('');
 }
+
+/*-----------------------------------------------------------FOOTER----------------------------------------------------------------*/
+
+//FONTAWESOME ICONS FOR FOOTER
+var footerCellPhoneIcons = [
+  { class: "fas fa-home", function: "refresh" },
+  { class: "fas fa-search", function: "refresh" },
+  { class: "far fa-plus-square", function: "refresh" },
+  { class: "fas fa-shopping-bag", function: "refresh" },
+  { class: "far fa-user", function: "refresh" }
+];
+
+//SHOW HEADER FOR DESKTOP DEVICES
+function displayFooterIconsForCellPhone() {
+  for (var i = 0; i < desktopHeaderIcons.length; i++) {
+    document.querySelector(
+      ".footer-index"
+    ).innerHTML += `<i class="${footerCellPhoneIcons[i].class} icon-option" onclick="${footerCellPhoneIcons[i].function}()"></i>`;
+  }
+}
+
+//CALL FUNCTION
+displayFooterIconsForCellPhone();
