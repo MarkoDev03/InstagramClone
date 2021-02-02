@@ -226,8 +226,8 @@ class DataProvider {
     let data = await provideData.json();
     let story = data.storiesArray;
     story = story.map(item => {
-      let id = item.id;let image = item.profileimage;let title = item.title;
-      return {id, image, title};
+      let id = item.id;let image = item.profileimage;let title = item.title;let classSt = item.class;let profileimageclass = item.imagecls; let usernameMargin = item.usernameMargin; 
+      return {id, image, title, classSt, profileimageclass, usernameMargin};
     });
     return story;
    }
@@ -248,7 +248,7 @@ class showContentOnPagesWhenLoadedClass {
   displayPosts(posts) {
     let result = "";
     posts.forEach((post) => {
-      result += `<div class="post"><div class="post-header"><div class="profile-image-username" ><img src="${post.profileimage}.png" alt="" class="profile-image"><p class="username">${post.username}</p></div><i class="fas fa-ellipsis-v  icon-option" onclick="reportPost()"></i></div><div class="post-content"><img src="${post.postcontent}.jpg" alt="" class="post-image" id="${post.idp}" ondblclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"><div class="lds-heart" id="${post.hrt}"><div></div></div></div><div class="post-functions"><div class="left-functions"><i class="far fa-heart icon-option icon-functions" id="${post.likes}" onclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"></i>  <i style="display:none" class="fas fa-heart icon-option icon-functions hide-heart-for-like" id="${post.likeinfo}"></i><i class="far fa-comment icon-option icon-functions"></i><i class="far fa-paper-plane icon-option icon-functions"></i></div><i class="far fa-bookmark icon-option"></i><i class="fas fa-bookmark icon-option" style="display:none"></i></div><div class="liked-info"><p class="liked-text">${post.ikedbySign}	&nbsp;</p><p class="thousand">${post.likescountrt}  ${post.likeTag}&nbsp;</p><p>${post.and}&nbsp;</p><p class="thousand">${post.incl}</p><p></p></div><br><div class="comment-info"><div><span class="comment"><span class="username username-profile">${post.username} 	&nbsp;</span>${post.commentContent}</span><span class="hashtags-tags">${post.hashatags}</span></div></div><div class="bottom-post"><p class="show-all">Show all comments (15)</p><div class="time"><p class="period">${post.time} ago</p><p>&nbsp;·&nbsp;</p><p class="translation">See translation</p></div></div><div class="leav-comment"><input type="text" name="comment"  autocomplete="off" class="leav-comment-input" placeholder="Leave your comment here..."><p class="send-comment">Post</p></div></div></div>`;
+      result += `<div class="post"><div class="post-header"><div class="profile-image-username" ><div class="frame-index"><div class="white-index"><img src="${post.profileimage}.png" alt="" class="profile-image"></div></div><p class="username">${post.username}</p></div><i class="fas fa-ellipsis-v  icon-option respondive-dots" onclick="reportPost()"></i></div><div class="post-content"><img src="${post.postcontent}.jpg" alt="" class="post-image" id="${post.idp}" ondblclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"><div class="lds-heart" id="${post.hrt}"><div></div></div></div><div class="post-functions"><div class="left-functions"><i class="far fa-heart icon-option icon-functions" id="${post.likes}" onclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"></i>  <i style="display:none" class="fas fa-heart icon-option icon-functions hide-heart-for-like" id="${post.likeinfo}"></i><i class="far fa-comment icon-option icon-functions"></i><i class="far fa-paper-plane icon-option icon-functions"></i></div><i class="far fa-bookmark icon-option"></i><i class="fas fa-bookmark icon-option" style="display:none"></i></div><div class="liked-info"><p class="liked-text">${post.ikedbySign}	&nbsp;</p><p class="thousand">${post.likescountrt}  ${post.likeTag}&nbsp;</p><p>${post.and}&nbsp;</p><p class="thousand">${post.incl}</p><p></p></div><br><div class="comment-info"><div><span class="comment"><span class="username username-profile">${post.username} 	&nbsp;</span>${post.commentContent}</span><span class="hashtags-tags">${post.hashatags}</span></div></div><div class="bottom-post"><p class="show-all">Show all comments (15)</p><div class="time"><p class="period">${post.time} ago</p><p>&nbsp;·&nbsp;</p><p class="translation">See translation</p></div></div><div class="leav-comment"><input type="text" name="comment"  autocomplete="off" class="leav-comment-input" placeholder="Leave your comment here..."><p class="send-comment">Post</p></div></div></div>`;
     });
     postLocation.innerHTML = result;
   }
@@ -257,7 +257,7 @@ class showContentOnPagesWhenLoadedClass {
   displayStories(stories) {
     var results = '';
     stories.forEach(story => {
-      results += `<div class="swiper-slide story-content" id="${story.id}"><img src="${story.image}.png" alt="" class="profile-picture-story"><p class="username-story">${story.title}</p></div>`;
+      results += `<div class="swiper-slide story-content" id="${story.id}"><div class="${story.classSt}"><div class="white-frame"><img src="${story.image}.png" alt="" class="profile-picture-story ${story.profileimageclass}"></div></div><p class="${story.usernameMargin}">${story.title}</p></div>`;
     });
     storyLocation.innerHTML = results;
 
@@ -266,8 +266,8 @@ class showContentOnPagesWhenLoadedClass {
   slidesPerView: 1,
     spaceBetween: 10,
       breakpoints: {
-         360: {slidesPerView: 5,spaceBetween: 5,},
-         400: {slidesPerView: 5,spaceBetween: 5,},
+         360: {slidesPerView: 4.5,spaceBetween: 5,},
+         400: {slidesPerView: 4.5,spaceBetween: 5,},
          402: {slidesPerView: 5,spaceBetween: 10,},
          640: {slidesPerView: 5,spaceBetween: 20,},
          768: {slidesPerView: 5,spaceBetween: 40,},

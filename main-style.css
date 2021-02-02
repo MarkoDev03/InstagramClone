@@ -114,7 +114,7 @@ body{
 .swiper1{
     width: 550px;
     padding-top:10px;
-    border:1px solid rgb(189, 189, 189);
+    border:1px solid rgb(214, 214, 214);
     z-index: 2;
 }
 #story-index{
@@ -134,9 +134,35 @@ body{
     justify-content: center;
     align-items: center;
 }
+.frame{
+    width: 65px;
+    height: 65px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #1952fd 90%);
+}
 .profile-picture-story{
     width: 56px;
     height: 56px;
+   
+}
+.radius{
+    border-radius: 50%;
+}
+.margin-user{
+    font-size: 12px;
+    margin-top:10px
+}
+.white-frame{
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .username-story{
     font-size: 12px;
@@ -158,7 +184,7 @@ body{
     width: 100%;
     height:fit-content;
     margin-top: 20px;
-    border:1px solid rgb(189, 189, 189);
+    border:1px solid rgb(214, 214, 214);
 }
 .post-header,.post-functions{
     width: 100%;
@@ -177,6 +203,25 @@ body{
 .profile-image{
     height: 35px;
     width: 35px;
+    border-radius: 50%;
+}
+.frame-index{
+    width: 44px;
+    height: 44px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #1952fd 90%);
+}   
+.white-index{
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .username{
     font-weight: 800;
@@ -271,11 +316,16 @@ body{
 .comment{
     font-size: 15px;
 }
+#insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+
+
+  }
 /*---------------------------------------LIKE ANIMATION---------------------------------------*/
 .lds-heart {
     display: none;
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     width: 80px;
     height: 80px; 
     left: 40%;

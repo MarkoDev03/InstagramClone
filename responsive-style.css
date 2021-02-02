@@ -11,17 +11,43 @@
     }
     
 }
-/*--------------------------------------------------RESPONSIVE FOR: 600-400-----------------------------------------------------*/
+/*--------------------------------------------------RESPONSIVE FOR: 600-300-----------------------------------------------------*/
 @media only screen and (max-width:600px) and (min-width:300px) {
     
     /*STORY*/
     .profile-picture-story{
-        width: 65px;
-        height: 65px;
+        width: 61px;
+        height: 61px;
     }   
     .leav-comment{
         height: 40px;
     }
+    .frame{
+        width: 69px;
+        height: 69px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #1952fd 90%);
+    }   
+    .white-frame{
+        border-radius:50%;
+        width: 65px;
+        height: 65px;
+        background-color: white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .username-story,.margin-user{
+        font-weight: 800;
+        font-size: 13px;
+    }
+    .margin-user{
+        margin-top:9px
+    }
+
     /*HEADER*/
     .pc-header,.search-main{
         display:none;
@@ -49,7 +75,7 @@
         border:none;
     }
     .swiper1{
-        margin-top: -10px;
+        margin-top: -17px;
     }
     #story-index{
         padding-top:0px;
@@ -80,13 +106,42 @@
     }
     .post-header{
         padding-top: 1px;
-        padding-bottom:1px
+        padding-bottom:1px;
+        height: 44px;
+    }
+    .profile-image{
+        height: 29px;
+        width: 29px;
+        border-radius: 50%;
+    }
+    .frame-index{
+        width: 36px;
+        height: 36px;
+    }   
+    .white-index{
+        width: 33px;
+        height: 33px;
+    }
+    .username{
+        font-weight: 900;
+        margin-left: 10px;
+        font-size:18px
+    }
+    .respondive-dots{
+        font-size:20px
+    }
+    .profile-image-username{
+        margin-left: 9px;
+    }
+    .respondive-dots{
+        margin-right: 10px;
     }
 
     /*FOOTER*/
     .footer-index{
         display: flex;
     }
+ 
     
 }
 
