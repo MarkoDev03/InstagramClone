@@ -1,10 +1,10 @@
 :root{
     --bg-color:white;
     --txt-color:black;
-    --border-color:#d6d5d5;
+    --border-color:#ececec;
 }
 
-.header-index,.footer-index,.body,.search-results-here,.swiper1,.white-frame,.post,.post-index,.footer-index,.section-index,.white-index,.search-index
+.header-index,.footer-index,.body,.search-results-here,.white-frame,.post,.post-index,.footer-index,.section-index,.white-index,.search-index
 {
     background-color: var(--bg-color);
 }
@@ -13,7 +13,23 @@
     color: var(--txt-color);
 }
 
-.header-index,.search-index,.posts-index,.search-index:focus,.search-results-here,.swiper1,.post,.leav-comment,.footer-index
+.search-index,.search-index:focus,.search-results-here,.post,.leav-comment,.footer-index,.search-index,.swiper1
 {
   border-color: var(--border-color);
+}
+@media only screen and (max-width:600px) and (min-width:300px) {
+.swiper1{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid;
+    border-color:var(--border-color);
+}
+.header-index{
+    border: none;
+}
+ .show{
+    border-bottom: 1px solid;
+    border-color:var(--border-color);
+ }
 }

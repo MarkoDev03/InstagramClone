@@ -380,7 +380,7 @@
             "function": "refresh"
         },
         {
-            "class": "far fa-user",
+            "class": "far fa-user mrg-mob",
             "function": "refresh"
         }
     ],

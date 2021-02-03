@@ -44,56 +44,14 @@ showSearch();
 
 //ARRAY FOR PROFILES
 var accounts = [
-  {
-    username: "offwhite",
-    profile_image: "./media/offwhite-profile-instagram.png",
-    profile_name: "Off White",
-    id: 1,
-  },
-  {
-    username: "natureig",
-    profile_image: "./media/nature.png",
-    profile_name: "🏝Nature🏝",
-    id: 2,
-  },
-  {
-    username: "user_000",
-    profile_image: "./media/username_0.png",
-    profile_name: "Instagram profile",
-    id: 3,
-  },
-  {
-    username: "designer",
-    profile_image: "./media/designer-profile-image-set.png",
-    profile_name: "Design",
-    id: 5,
-  },
-  {
-    username: "plantsig",
-    profile_image: "./media/circle-croppedG.png",
-    profile_name: "🍀plants🍀",
-    id: 4,
-  },
-  {
-    username: "personal",
-    profile_image: "./media/personal-blog-profile-image.png",
-    profile_name: "personalblog",
-    id: 6,
-  },
-  {
-    username: "animals",
-    url: "animals.html",
-    profile_image: "./media/animals.png",
-    profile_name: "Wild Animals",
-    id: 7,
-  },
-  {
-    username: "emoji_ig",
-    url: "emoji_ig.html",
-    profile_image: "./media/smile_profile_image.png",
-    profile_name: "Emojies",
-    id: 8,
-  },
+  {username: "offwhite",profile_image: "./media/offwhite-profile-instagram.png",profile_name: "Off White",id: 1,},
+  {username: "natureig",profile_image: "./media/nature.png",profile_name: "🏝Nature🏝",id: 2,},
+  {username: "user_000",profile_image: "./media/username_0.png",profile_name: "Instagram profile",id: 3,},
+  {username: "designer",profile_image: "./media/designer-profile-image-set.png",profile_name: "Design",id: 5,},
+  {username: "plantsig",profile_image: "./media/circle-croppedG.png",profile_name: "🍀plants🍀",id: 4,},
+  {username: "personal",profile_image: "./media/personal-blog-profile-image.png",profile_name: "personalblog",id: 6,},
+  {username: "animals",url: "animals.html",profile_image: "./media/animals.png",profile_name: "Wild Animals",id: 7,},
+  {username: "emoji_ig",url: "emoji_ig.html",profile_image: "./media/smile_profile_image.png",profile_name: "Emojies",id: 8,},
 ];
 
 //SEARCH VARIABLES
@@ -102,8 +60,11 @@ var resultsLista = document.querySelector(".search-results-here");
 
 //FUNCTIONS FOR SEARCH
 function setList(group) {
+
   clearList();
+
   for (const account of group) {
+
     //DISPLAY RESULT BLOCK
     resultsLista.style.display = "flex";
     resultsLista.style.height = "200px";
@@ -115,7 +76,7 @@ function setList(group) {
     const image = document.createElement("img");
     const divs = document.createElement("div");
 
-    //SOURCES
+    //SOURCES FOR DATA
     image.src = account.profile_image;
     name.textContent = account.profile_name;
     username.textContent = account.username;
@@ -137,7 +98,9 @@ function setList(group) {
     });
   }
   if (group.length == 0) {
+
     setNoResults();
+
   }
 }
 
@@ -151,6 +114,7 @@ function clearList() {
 
 //SHOW NO RESULTS FOUND
 function setNoResults() {
+  
   //DISPLAY RESULT BLOCK
   resultsLista.style.display = "flex";
   resultsLista.style.height = "fit-content";
@@ -162,7 +126,7 @@ function setNoResults() {
   //STYLE
   block.classList.add("result-item-style");text.textContent = "No results founf for" + " '" + searchInHeader.value + "'";block.style.width = "200px";block.style.backgroundColor = "white";block.style.borderRight = "1px";block.style.borderBottom = "1px";block.style.borderRight = "1px";block.style.padding = "5px";block.style.borderColor = "grey";text.style.fontFamily = "Verdana";text.style.fontSize = "14px";
 
-  //APPEND_CHILD
+  //APPEND CHILD
   block.appendChild(text);
   resultsLista.appendChild(block);
 }
@@ -225,7 +189,7 @@ class DataProvider {
       console.log(error);
       alert(error);
     } finally {
-      console.log("Connection with database successed");
+      //console.log("Connection with database successed");
     }
   }
 
@@ -252,7 +216,7 @@ class DataProvider {
       console.log(error);
       alert(error);
     } finally {
-      console.log("Connection with database successed");
+      //console.log("Connection with database successed");
     }
   }
 
@@ -275,7 +239,7 @@ class DataProvider {
       console.log(error);
       alert(error);
     } finally {
-      console.log("Connection with database successed");
+      //console.log("Connection with database successed");
     }
   }
 
@@ -298,7 +262,7 @@ class DataProvider {
       console.log(error);
       alert(error);
     } finally {
-      console.log("Connection with database successed");
+      //console.log("Connection with database successed");
     }
   }
   //GET DATA FOR MOBILE HEADER
@@ -320,7 +284,7 @@ class DataProvider {
       console.log(error);
       alert(error);
     } finally {
-      console.log("Connection with database successed");
+      //console.log("Connection with database successed");
     }
   }
 }
@@ -332,7 +296,7 @@ class showContentOnPagesWhenLoadedClass {
     let result = "";
     posts.forEach((post) => {
       result += `
-      <div class="post"><div class="post-header"><div class="profile-image-username" ><div class="frame-index"><div class="white-index"><img src="${post.profileimage}.png" alt="" class="profile-image"></div></div><p class="username">${post.username}</p></div><i class="fas fa-ellipsis-v  icon-option respondive-dots" onclick="reportPost()"></i></div><div class="post-content"><img src="${post.postcontent}.jpg" alt="" class="post-image" id="${post.idp}" ondblclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"><div class="lds-heart" id="${post.hrt}"><div></div></div></div><div class="post-functions"><div class="left-functions"><i class="far fa-heart icon-option icon-functions" id="${post.likes}" onclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"></i><i style="display:none" class="fas fa-heart icon-option icon-functions hide-heart-for-like" id="${post.likeinfo}"></i><i class="far fa-comment icon-option icon-functions"></i><i class="far fa-paper-plane icon-option icon-functions"></i></div><i class="far fa-bookmark icon-option"></i><i class="fas fa-bookmark icon-option" style="display:none"></i></div><div class="liked-info"><p class="liked-text">${post.ikedbySign}	&nbsp;</p><p class="thousand">${post.likescountrt}  ${post.likeTag}&nbsp;</p><p>${post.and}&nbsp;</p><p class="thousand">${post.incl}</p><p></p></div><br><div class="comment-info"><div><span class="comment"><span class="username username-profile">${post.username} 	&nbsp;</span><span class="comment-color">${post.commentContent}</span><span class="hashtags-tags">${post.hashatags}</span></div></div><div class="bottom-post"><p class="show-all">Show all comments (15)</p><div class="time"><p class="period">${post.time} ago</p><p>&nbsp;·&nbsp;</p><p class="translation">See translation</p></div></div><div class="leav-comment"><input type="text" name="comment"  autocomplete="off" class="leav-comment-input" placeholder="Leave your comment here..."><p class="send-comment">Post</p></div></div></div>`;
+      <div class="post"><div class="post-header"><div class="profile-image-username" ><div class="frame-index"><div class="white-index"><img src="${post.profileimage}.png" alt="" class="profile-image"></div></div><p class="username margin-user-name">${post.username}</p></div><i class="fas fa-ellipsis-v  icon-option respondive-dots" onclick="reportPost()"></i></div><div class="post-content"><img src="${post.postcontent}.jpg" alt="" class="post-image" id="${post.idp}" ondblclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"><div class="lds-heart" id="${post.hrt}"><div></div></div></div><div class="post-functions"><div class="left-functions"><i class="far fa-heart icon-option icon-functions" id="${post.likes}" onclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"></i><i style="display:none" class="fas fa-heart icon-option icon-functions hide-heart-for-like" id="${post.likeinfo}"></i><i class="far fa-comment icon-option icon-functions"></i><i class="far fa-paper-plane icon-option icon-functions"></i></div><i class="far fa-bookmark icon-option"></i><i class="fas fa-bookmark icon-option" style="display:none"></i></div><div class="liked-info"><p class="liked-text font-for-comment">${post.ikedbySign}	&nbsp;</p><p class="thousand font-for-comment">${post.likescountrt}  ${post.likeTag}&nbsp;</p><p class="font-for-comment">${post.and}&nbsp;</p><p class="thousand font-for-comment">${post.incl}</p><p></p></div><br><div class="comment-info"><div><span class="comment"><span class="username username-profile">${post.username} 	&nbsp;</span><span class="comment-color font-for-comment">${post.commentContent}</span><span class="hashtags-tags font-for-comment">${post.hashatags}</span></div></div><div class="bottom-post"><p class="show-all">Show all comments (15)</p><div class="time"><p class="period">${post.time} ago</p><p>&nbsp;·&nbsp;</p><p class="translation">See translation</p></div></div><div class="leav-comment"><input type="text" name="comment"  autocomplete="off" class="leav-comment-input" placeholder="Leave your comment here..."><p class="send-comment">Post</p></div></div></div>`;
     });
     postLocation.innerHTML = result;
   }
@@ -440,3 +404,14 @@ function showLikeOnPost(heartIcon, heartFont, likedHeartFont) {
 function reportPost() {
   let reportPopUp = document.getElementById("");
 }
+
+//SET HEADER BORDER 
+window.addEventListener("scroll", function(){
+	var scrollTop = window.pageYOffset;
+  if(scrollTop >= '60' && window.innerWidth <= '600'){
+document.querySelector('.header-index').classList.add('show');
+  }else{
+    document.querySelector('.header-index').classList.remove('show');
+  }
+
+}, false);

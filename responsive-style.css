@@ -25,19 +25,11 @@
     .frame{
         width: 69px;
         height: 69px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #1952fd 90%);
     }   
     .white-frame{
-        border-radius:50%;
         width: 65px;
         height: 65px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
     }
     .username-story,.margin-user{
         font-weight: 800;
@@ -62,23 +54,22 @@
     .header-index{
       padding-top: 0px;
       padding-bottom:0px;
-      border-bottom:0.1px solid;
       justify-content: space-between;
     }
 
     /*MAIN CONTENT*/
-    .swiper1,.section-index,.posts-index{
+    .section-index,.posts-index{
         width: 100%;
         border:none;
     }
     .swiper1{
+        width: 100%;       
+        
         margin-top: -17px;
+
     }
     #story-index{
-        padding-top:0px;
-        padding-left:0px;
-        padding-right:0px;
-        padding-bottom:0px;
+        padding:0px
     }
     .post{
         width: 100%;
@@ -92,19 +83,14 @@
     .liked-info{
         margin-top:-10px;
         width: 90%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
         margin-left:10px;
     }
     .posts-index{
-        border-top:0.1px solid;
+        padding:0px;
         margin-top: 1px;
-        border-color: rgb(214, 213, 213);
     }
     .post-header{
-        padding-top: 1px;
-        padding-bottom:1px;
+        padding:0px;
         height: 44px;
     }
     .profile-image{
@@ -121,8 +107,13 @@
         height: 33px;
     }
     .username{
-        font-weight: 900;
+        font-weight: 900;        
+        font-size:18px
+    }
+    .margin-user-name{
         margin-left: 10px;
+    }
+    .font-for-comment{
         font-size:18px
     }
     .respondive-dots{
@@ -139,8 +130,9 @@
     .footer-index{
         display: flex;
     }
+    .mrg-mob{
+        margin-right: 0px;
+    }
  
     
 }
-
-

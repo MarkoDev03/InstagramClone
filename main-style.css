@@ -315,8 +315,6 @@ body{
 }
 #insta {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-
-
   }
 /*---------------------------------------LIKE ANIMATION---------------------------------------*/
 .lds-heart {
@@ -403,8 +401,8 @@ body{
 .footer-index{
     width: 100%;
     border-top: 1px solid;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: none;
     justify-content: space-around;
     align-items: center;
