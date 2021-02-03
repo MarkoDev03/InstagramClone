@@ -1,25 +1,3 @@
-/*-------------------------------------------------HEADER DESKTOP ITEMS--------------------------------------------------------------*/
-
-//FONTAWESOME ICONS FOR HEADER
-var desktopHeaderIcons = [
-  { class: "fas fa-home", function: "refresh" },
-  { class: "far fa-comment", function: "messages" },
-  { class: "far fa-compass", function: "compass" },
-  { class: "far fa-heart", function: "liked" },
-  { class: "far fa-user-circle", function: "profile" },
-];
-
-//SHOW HEADER FOR DESKTOP DEVICES
-function displayDesktopHeaderIcons() {
-  for (var i = 0; i < desktopHeaderIcons.length; i++) {
-    document.querySelector(
-      ".pc-header"
-    ).innerHTML += `<i class="${desktopHeaderIcons[i].class} icon-option" onclick="${desktopHeaderIcons[i].function}()"></i>`;
-  }
-}
-
-//CALL FUNCTION
-displayDesktopHeaderIcons();
 
 /*-------------------------------------------------HEADER MOBILE ICONS---------------------------------------------------------------*/
 
@@ -239,6 +217,27 @@ class DataProvider {
   }
   }
 
+  //GET DATA FOR HEADER FONTAWESOME ICONS
+  async getHeaderIcons() {
+    try{
+      let API = "data.json";
+      let icon = await fetch(API);
+      let data = await icon.json();
+      let respond = data.desktopHeaderIcons;
+      respond = respond.map(item => {
+       let classHeader = item.class;
+       let functionsHeader = item.function;
+       return {classHeader, functionsHeader};
+      });
+      return respond;
+    }catch(error){
+      console.log(error);
+      alert(error);
+    }finally {
+      console.log("Connection with database successed");
+    }
+  }
+
 }
 
 /*UI CLASS FOR ALL POSTS */
@@ -279,12 +278,21 @@ class showContentOnPagesWhenLoadedClass {
        },
      });
     }
+     
+    //SHOW HEADER ON PAGE
+    displayDesktopHeaderIcons(icon) {
+      icon.forEach(desktopHeaderIcons => {
+        document.querySelector(".pc-header").innerHTML += `<i class="${desktopHeaderIcons.classHeader} icon-option" onclick="${desktopHeaderIcons.functionsHeader}()"></i>`;
+ 
+      });     
+    }
 
 }
 
 //OBJECT FOR DATAPROVIDER
 let data = new DataProvider();
 let storyData = new DataProvider();
+let headerDat = new DataProvider();
 
 //OBJECT FOR UI
 let ui = new showContentOnPagesWhenLoadedClass();
@@ -294,6 +302,9 @@ data.getData().then((data) => ui.displayPosts(data));
 
 //SHOW STORIES
 storyData.getStories().then((storyData) => ui.displayStories(storyData));
+
+//SHOW HEADER
+headerDat.getHeaderIcons().then(data => ui.displayDesktopHeaderIcons(data));
 
 //LIKE FUNCTIONS
 function showLikeOnPost(heartIcon,heartFont, likedHeartFont) {

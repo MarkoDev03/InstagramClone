@@ -20,7 +20,7 @@ body{
 /*---------------------------------------HEADER---------------------------------------*/
 .header-index{
     width: 100%;
-    border-bottom: 1px solid rgb(189, 189, 189);
+    border-bottom: 1px solid;
     padding-top: 5px;
     padding-bottom: 5px;
     display: flex;
@@ -67,13 +67,13 @@ body{
 }
 .search-index{
     padding:5px;
-    border: 1px solid rgb(189, 189, 189);
+    border: 1px solid;
     border-radius: 10px;
     text-align: center;
 }
 .search-index:focus{
-    border: 1px solid rgb(189, 189, 189);
-   outline:none;
+    border: 1px solid;
+    outline:none;
 }
 .search-results-here{
     width: 250px;
@@ -82,7 +82,7 @@ body{
     display:none;
     overflow-x: hidden;
     justify-content: flex-start;
-    border-bottom: 1px solid rgb(189, 189, 189);
+    border-bottom: 1px solid ;
     align-items: flex-start;
     flex-direction: column;
     z-index: 9;
@@ -112,7 +112,7 @@ body{
 .swiper1{
     width: 550px;
     padding-top:10px;
-    border:1px solid rgb(214, 214, 214);
+    border:1px solid ;
     z-index: 2;
 }
 #story-index{
@@ -157,7 +157,6 @@ body{
     border-radius:50%;
     width: 60px;
     height: 60px;
-    background-color: white;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -182,7 +181,7 @@ body{
     width: 100%;
     height:fit-content;
     margin-top: 20px;
-    border:1px solid rgb(214, 214, 214);
+    border:1px solid ;
 }
 .post-header,.post-functions{
     width: 100%;
@@ -283,7 +282,7 @@ body{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    border-top:1px solid rgb(189, 189, 189);
+    border-top:1px solid ;
 }
 .leav-comment-input,.leav-comment-input:focus{
     border:none;
@@ -403,7 +402,7 @@ body{
 /*---------------------------------------FOOTER---------------------------------------*/
 .footer-index{
     width: 100%;
-    border-top: 1px solid rgb(189, 189, 189);
+    border-top: 1px solid;
     padding-top: 5px;
     padding-bottom: 5px;
     display: none;

@@ -338,6 +338,27 @@
                 "imagecls":"radius",
                 "usernameMargin":"username-story"
             }
-        ]
-
+        ],
+        "desktopHeaderIcons": [
+            { 
+                "class": "fas fa-home",
+                "function": "refresh"
+                 },
+            { 
+                "class": "far fa-comment",
+                "function": "messages" 
+                },
+            {
+                "class": "far fa-compass", 
+                "function": "compass"
+                 },
+            { 
+                "class": "far fa-heart",
+                "function": "liked" 
+                },
+            { 
+                "class": "far fa-user-circle",
+                "function": "profile"
+                }
+          ]
 }

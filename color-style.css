@@ -1,12 +1,19 @@
 :root{
     --bg-color:white;
     --txt-color:black;
+    --border-color:#d6d5d5;
 }
 
 .header-index,.footer-index,.body,.search-results-here,.swiper1,.white-frame,.post,.post-index,.footer-index,.section-index,.white-index,.search-index
 {
     background-color: var(--bg-color);
 }
-.icon-option,.username-story,.username,.liked-info p,.translation,.comment-color,.margin-user{
-    color:var(--txt-color);
+.icon-option,.username-story,.username,.liked-info p,.translation,.comment-color,.margin-user,.leav-comment p
+{
+    color: var(--txt-color);
+}
+
+.header-index,.search-index,.posts-index,.search-index:focus,.search-results-here,.swiper1,.post,.leav-comment,.footer-index
+{
+  border-color: var(--border-color);
 }

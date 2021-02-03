@@ -35,7 +35,6 @@
         border-radius:50%;
         width: 65px;
         height: 65px;
-        background-color: white;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -56,9 +55,6 @@
         display: flex;
         margin-right: -15px;
     }
-    .header-index{
-        justify-content: space-between;
-    }
     .headline-image{ 
         margin-left: 10px;
         margin-top: 5px;
@@ -66,7 +62,8 @@
     .header-index{
       padding-top: 0px;
       padding-bottom:0px;
-      border-bottom:0.1px solid rgb(224, 224, 224);
+      border-bottom:0.1px solid;
+      justify-content: space-between;
     }
 
     /*MAIN CONTENT*/
@@ -101,8 +98,9 @@
         margin-left:10px;
     }
     .posts-index{
-        border-top:0.1px solid rgb(224, 224, 224);
+        border-top:0.1px solid;
         margin-top: 1px;
+        border-color: rgb(214, 213, 213);
     }
     .post-header{
         padding-top: 1px;
