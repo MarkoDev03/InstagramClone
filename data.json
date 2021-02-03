@@ -1,5 +1,5 @@
 {
-    "posts":[
+    "posts": [
         {
             "username": "offwhite",
             "profileimage": "./media/offwhite-profile-instagram",
@@ -12,14 +12,14 @@
             "time": "2 h",
             "hashatagsurl": "#",
             "id": 1,
-            "idp":11,
-            "hrt":877787787878,
-            "ikedbySign":"Liked by",
-            "and":"and",
-            "incl":"thousands of others",
-            "likescountrt":"",
-            "likeTag":"designer",
-            "likeinfo":11469619841814
+            "idp": 11,
+            "hrt": 877787787878,
+            "ikedbySign": "Liked by",
+            "and": "and",
+            "incl": "thousands of others",
+            "likescountrt": "",
+            "likeTag": "designer",
+            "likeinfo": 11469619841814
         },
         {
             "username": "natureig",
@@ -41,19 +41,19 @@
             "hashatagsurl": "#",
             "tagedurl": "likedpage.html",
             "id": 2,
-            "idp":21,
-            "hrt":84894494945,
-            "ikedbySign":"Liked by",
-            "and":"and",
-            "incl":"thousands of others",
-            "likescountrt":"",
-            "likeTag":"user_000",
-            "likeinfo":2457
+            "idp": 21,
+            "hrt": 84894494945,
+            "ikedbySign": "Liked by",
+            "and": "and",
+            "incl": "thousands of others",
+            "likescountrt": "",
+            "likeTag": "user_000",
+            "likeinfo": 2457
         },
         {
             "username": "user_000",
             "profileimage": "./media/username_0",
-            "postcontent": "./media/image_nature_1",                                         
+            "postcontent": "./media/image_nature_1",
             "likes": 789,
             "commentContent": "Welcome to Instagram clone by Marko Perovic",
             "mention": "Me",
@@ -66,14 +66,14 @@
             "hashatagsurl": "#",
             "tagedurl": "likedpage.html",
             "id": 3,
-            "idp":31,
-            "hrt":8678879,
-            "ikedbySign":"",
-            "and":"",
-            "incl":"",
-            "likescountrt":"1.323 Likes",
-            "likeTag":"",
-            "likeinfo":354
+            "idp": 31,
+            "hrt": 8678879,
+            "ikedbySign": "",
+            "and": "",
+            "incl": "",
+            "likescountrt": "1.323 Likes",
+            "likeTag": "",
+            "likeinfo": 354
         },
         {
             "username": "plantsig",
@@ -95,14 +95,14 @@
             "hashatagsurl": "",
             "tagedurl": "likedpage.html",
             "id": 4,
-            "idp":41,
-            "hrt":86958,
-            "ikedbySign":"",
-            "and":"",
-            "incl":"",
-            "likescountrt":"124 Likes",
-            "likeTag":"",
-            "likeinfo":645
+            "idp": 41,
+            "hrt": 86958,
+            "ikedbySign": "",
+            "and": "",
+            "incl": "",
+            "likescountrt": "124 Likes",
+            "likeTag": "",
+            "likeinfo": 645
         },
         {
             "username": "designer",
@@ -124,14 +124,14 @@
             "hashatagsurl": "#",
             "tagedurl": "likedpage.html",
             "id": 5,
-            "idp":51,
-            "hrt":8694,
-            "ikedbySign":"Liked by",
-            "and":"and",
-            "incl":"thousands of others",
-            "likescountrt":"",
-            "likeTag":"personal",
-            "likeinfo":555
+            "idp": 51,
+            "hrt": 8694,
+            "ikedbySign": "Liked by",
+            "and": "and",
+            "incl": "thousands of others",
+            "likescountrt": "",
+            "likeTag": "personal",
+            "likeinfo": 555
         },
         {
             "username": "personal",
@@ -153,14 +153,14 @@
             "hashatagsurl": "#",
             "tagedurl": "likedpage.html",
             "id": 6,
-            "idp":61,
-            "hrt":78869,
-            "ikedbySign":"Liked by",
-            "and":"and",
-            "incl":"thousands of others",
-            "likescountrt":"",
-            "likeTag":"carsig",
-            "likeinfo":675
+            "idp": 61,
+            "hrt": 78869,
+            "ikedbySign": "Liked by",
+            "and": "and",
+            "incl": "thousands of others",
+            "likescountrt": "",
+            "likeTag": "carsig",
+            "likeinfo": 675
         },
         {
             "username": "animals",
@@ -182,14 +182,14 @@
             "hashatagsurl": "#",
             "tagedurl": "likedpage.html",
             "id": 7,
-            "idp":71,
-            "hrt":77,
-            "ikedbySign":"",
-            "and":"",
-            "incl":"",
-            "likescountrt":"834.782 Likes",
-            "likeTag":"",
-            "likeinfo":7712
+            "idp": 71,
+            "hrt": 77,
+            "ikedbySign": "",
+            "and": "",
+            "incl": "",
+            "likescountrt": "834.782 Likes",
+            "likeTag": "",
+            "likeinfo": 7712
         },
         {
             "username": "emoji_ig",
@@ -211,14 +211,14 @@
             "hashatagsurl": "#",
             "tagedurl": "likedpage.html",
             "id": 8,
-            "idp":81,
-            "hrt":58158,
-            "ikedbySign":"Liked by",
-            "and":"and",
-            "incl":"thousands of others",
-            "likescountrt":"",
-            "likeTag":"plantsig",
-            "likeinfo":842
+            "idp": 81,
+            "hrt": 58158,
+            "ikedbySign": "Liked by",
+            "and": "and",
+            "incl": "thousands of others",
+            "likescountrt": "",
+            "likeTag": "plantsig",
+            "likeinfo": 842
         },
         {
             "username": "cars",
@@ -240,125 +240,158 @@
             "hashatagsurl": "#",
             "tagedurl": "likedpage.html",
             "id": 79999999,
-            "idp":1212371,
-            "hrt":78897,
-            "ikedbySign":"",
-            "and":"",
-            "incl":"",
-            "likescountrt":"834.782 Likes",
-            "likeTag":"",
-            "likeinfo":7841712
+            "idp": 1212371,
+            "hrt": 78897,
+            "ikedbySign": "",
+            "and": "",
+            "incl": "",
+            "likescountrt": "834.782 Likes",
+            "likeTag": "",
+            "likeinfo": 7841712
         }
-        ], "storiesArray": [
-            { 
-                "title": "Your story",
-                "profileimage": "./media/profile_picture",
-                "id": 1,
-                "class":" ",
-                "imagecls":" height",
-                "usernameMargin":"margin-user"
-            },
-            { 
-                "title": "user_000",
-                "profileimage": "./media/username_0", 
-                "id": 2,
-                "class":"frame",
-                "imagecls":"radius",
-                "usernameMargin":"username-story"
-            },
-            { 
-                "title": "natureig",
-                "profileimage": "./media/nature",
-                "id": 3,
-                "class":"frame",
-                "imagecls":"radius",
-                "usernameMargin":"username-story"
-            },
-            {
-                "title": "cars__ig",
-                "profileimage": "./media/cars",
-                "id": 4,
-                "class":"frame",
-                "imagecls":"radius",
-                "usernameMargin":"username-story"
-            },
-            { 
-                "title": "animals",
-                "profileimage": "./media/animals",
-                "id": 5,
-                "class":"frame",
-                "imagecls":"radius",
-                "usernameMargin":"username-story"
-            },
-            { 
-                "title": "emoji_ig",
-                "profileimage": "./media/smile_profile_image",
-                "id": 6,
-                "class":"frame",
-                "imagecls":"radius",
-                "usernameMargin":"username-story"
-            },
-            { 
-                "title": "videosig",
-                "profileimage": "./media/urusprofile_image", 
-                "id": 7,
-                "class":"frame",
-                "imagecls":"radius",
-                "usernameMargin":"username-story"
-            },
-            {
-                "title": "personal",
-                "profileimage": "./media/personal-blog-profile-image",
-                "id": 8,
-                "class":"frame",
-                "imagecls":"radius",
-                "usernameMargin":"username-story"
-            },
-            {
-                "title": "designer",
-                "profileimage": "./media/designer-profile-image-set",
-                "id": 9,
-                "class":"frame",
-                "imagecls":"radius",
-                "usernameMargin":"username-story"
-            },
-            {
-                "title": "offwhite",
-                "profileimage": "./media/offwhite-profile-instagram",
-                "id": 10,
-                "class":"frame",
-                "imagecls":"radius",
-                "usernameMargin":"username-story"
-            },
-            { 
-                "title": "plantsig",
-                "profileimage": "./media/circle-croppedG",
-                "id": 11,
-                "class":"frame",
-                "imagecls":"radius",
-                "usernameMargin":"username-story"
-            }
-        ],
-        "desktopHeaderIcons": [
-            { 
-                "class": "fas fa-home",
-                "function": "refresh"
-                 },
-            { 
-                "class": "far fa-comment",
-                "function": "messages" 
-                },
-            {
-                "class": "far fa-compass", 
-                "function": "compass"
-                 },
-            { 
-                "class": "far fa-heart",
-                "function": "liked" 
-                },
-            { 
-                "class": "far fa-user-circle",
-                "function": "profile"
-                }
-          ]
+    ],
+    "storiesArray": [
+        {
+            "title": "Your story",
+            "profileimage": "./media/profile_picture",
+            "id": 1,
+            "class": " ",
+            "imagecls": " height",
+            "usernameMargin": "margin-user"
+        },
+        {
+            "title": "user_000",
+            "profileimage": "./media/username_0",
+            "id": 2,
+            "class": "frame",
+            "imagecls": "radius",
+            "usernameMargin": "username-story"
+        },
+        {
+            "title": "natureig",
+            "profileimage": "./media/nature",
+            "id": 3,
+            "class": "frame",
+            "imagecls": "radius",
+            "usernameMargin": "username-story"
+        },
+        {
+            "title": "cars__ig",
+            "profileimage": "./media/cars",
+            "id": 4,
+            "class": "frame",
+            "imagecls": "radius",
+            "usernameMargin": "username-story"
+        },
+        {
+            "title": "animals",
+            "profileimage": "./media/animals",
+            "id": 5,
+            "class": "frame",
+            "imagecls": "radius",
+            "usernameMargin": "username-story"
+        },
+        {
+            "title": "emoji_ig",
+            "profileimage": "./media/smile_profile_image",
+            "id": 6,
+            "class": "frame",
+            "imagecls": "radius",
+            "usernameMargin": "username-story"
+        },
+        {
+            "title": "videosig",
+            "profileimage": "./media/urusprofile_image",
+            "id": 7,
+            "class": "frame",
+            "imagecls": "radius",
+            "usernameMargin": "username-story"
+        },
+        {
+            "title": "personal",
+            "profileimage": "./media/personal-blog-profile-image",
+            "id": 8,
+            "class": "frame",
+            "imagecls": "radius",
+            "usernameMargin": "username-story"
+        },
+        {
+            "title": "designer",
+            "profileimage": "./media/designer-profile-image-set",
+            "id": 9,
+            "class": "frame",
+            "imagecls": "radius",
+            "usernameMargin": "username-story"
+        },
+        {
+            "title": "offwhite",
+            "profileimage": "./media/offwhite-profile-instagram",
+            "id": 10,
+            "class": "frame",
+            "imagecls": "radius",
+            "usernameMargin": "username-story"
+        },
+        {
+            "title": "plantsig",
+            "profileimage": "./media/circle-croppedG",
+            "id": 11,
+            "class": "frame",
+            "imagecls": "radius",
+            "usernameMargin": "username-story"
+        }
+    ],
+    "desktopHeaderIcons": [
+        {
+            "class": "fas fa-home",
+            "function": "refresh"
+        },
+        {
+            "class": "far fa-comment",
+            "function": "messages"
+        },
+        {
+            "class": "far fa-compass",
+            "function": "compass"
+        },
+        {
+            "class": "far fa-heart",
+            "function": "liked"
+        },
+        {
+            "class": "far fa-user-circle",
+            "function": "profile"
+        }
+    ],
+    "footerCellPhoneIcons": [
+        {
+            "class": "fas fa-home",
+            "function": "refresh"
+        },
+        {
+            "class": "fas fa-search",
+            "function": "refresh"
+        },
+        {
+            "class": "far fa-plus-square",
+            "function": "refresh"
+        },
+        {
+            "class": "fas fa-shopping-bag",
+            "function": "refresh"
+        },
+        {
+            "class": "far fa-user",
+            "function": "refresh"
+        }
+    ],
+    "mobileHeaderIcons": [
+        {
+            "class": "fa-heart phone-icons",
+            "function": "liked"
+        },
+        {
+            "class": "fa-comment phone-icons",
+            "function": "messages"
+        }
+    ]
 }
