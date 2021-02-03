@@ -87,9 +87,7 @@ body{
     flex-direction: column;
     z-index: 9;
     position: absolute;
-    top: 35px;
-    background-color: white;
-    
+    top: 35px;  
 }
 .username-name-result{
     display: flex;
@@ -218,7 +216,6 @@ body{
     border-radius:50%;
     width: 40px;
     height: 40px;
-    background-color: white;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -292,12 +289,13 @@ body{
     border:none;
     outline:none;
     margin-left: 5px;
+    background-color: transparent;
 }
 .comment-flex{
     display: flex;
 }
 .send-comment{
-    color:rgb(0, 102, 255);
+    color:rgb(20, 137, 190);
     margin-right: 10px;
 }
 .translation{
@@ -308,7 +306,7 @@ body{
     font-size: 12px;
 }
 .hashtags-tags{
-    color:rgb(0, 102, 255);
+    color:rgb(20, 137, 190);
 }
 .and{
     margin-left:-55px

@@ -1,0 +1,12 @@
+:root{
+    --bg-color:white;
+    --txt-color:black;
+}
+
+.header-index,.footer-index,.body,.search-results-here,.swiper1,.white-frame,.post,.post-index,.footer-index,.section-index,.white-index,.search-index
+{
+    background-color: var(--bg-color);
+}
+.icon-option,.username-story,.username,.liked-info p,.translation,.comment-color,.margin-user{
+    color:var(--txt-color);
+}
