@@ -32,9 +32,6 @@ function showSearch() {
   document.querySelector(
     ".search-main"
   ).innerHTML = `  <input type="text" name="search" id="profile-search-index" class="search-index" autocomplete="off" placeholder="Search"><div class="search-results-here"></div>`;
-  document.querySelector(
-    ".image-in-header"
-  ).innerHTML = `<img src="./media/headline-black.png" alt="" class="headline-image" onclick="refresh()">`;
 }
 
 //CALL FUNCTION
@@ -166,11 +163,13 @@ searchInHeader.addEventListener("input", (event) => {
 
 /*----------------------------------------------HEADER & POSTS & STORIES & FOOTER --------------------------------------------------*/
 
+//WHERE TO DISPLAY CONTENT 
 var postLocation = document.querySelector(".posts-index");
 var storyLocation = document.getElementById("story-index");
 
 /*GET ALL DATA FROM DATABASE FOR POSTS*/
 class DataProvider {
+
   //GET DATA FOR POSTS
   async getData() {
     try {
@@ -265,6 +264,7 @@ class DataProvider {
       //console.log("Connection with database successed");
     }
   }
+
   //GET DATA FOR MOBILE HEADER
   async getMobileHeader() {
     try {
@@ -291,12 +291,13 @@ class DataProvider {
 
 /*UI CLASS FOR ALL POSTS */
 class showContentOnPagesWhenLoadedClass {
+
   //SHOW POSTS ON PAGE
   displayPosts(posts) {
     let result = "";
     posts.forEach((post) => {
       result += `
-      <div class="post"><div class="post-header"><div class="profile-image-username" ><div class="frame-index"><div class="white-index"><img src="${post.profileimage}.png" alt="" class="profile-image"></div></div><p class="username margin-user-name">${post.username}</p></div><i class="fas fa-ellipsis-v  icon-option respondive-dots" onclick="reportPost()"></i></div><div class="post-content"><img src="${post.postcontent}.jpg" alt="" class="post-image" id="${post.idp}" ondblclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"><div class="lds-heart" id="${post.hrt}"><div></div></div></div><div class="post-functions"><div class="left-functions"><i class="far fa-heart icon-option icon-functions" id="${post.likes}" onclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"></i><i style="display:none" class="fas fa-heart icon-option icon-functions hide-heart-for-like" id="${post.likeinfo}"></i><i class="far fa-comment icon-option icon-functions"></i><i class="far fa-paper-plane icon-option icon-functions"></i></div><i class="far fa-bookmark icon-option"></i><i class="fas fa-bookmark icon-option" style="display:none"></i></div><div class="liked-info"><p class="liked-text font-for-comment">${post.ikedbySign}	&nbsp;</p><p class="thousand font-for-comment">${post.likescountrt}  ${post.likeTag}&nbsp;</p><p class="font-for-comment">${post.and}&nbsp;</p><p class="thousand font-for-comment">${post.incl}</p><p></p></div><br><div class="comment-info"><div><span class="comment"><span class="username username-profile">${post.username} 	&nbsp;</span><span class="comment-color font-for-comment">${post.commentContent}</span><span class="hashtags-tags font-for-comment">${post.hashatags}</span></div></div><div class="bottom-post"><p class="show-all">Show all comments (15)</p><div class="time"><p class="period">${post.time} ago</p><p>&nbsp;·&nbsp;</p><p class="translation">See translation</p></div></div><div class="leav-comment"><input type="text" name="comment"  autocomplete="off" class="leav-comment-input" placeholder="Leave your comment here..."><p class="send-comment">Post</p></div></div></div>`;
+      <div class="post"><div class="post-header"><div class="profile-image-username" ><div class="frame-index"><div class="white-index"><img src="${post.profileimage}.png" alt="" class="profile-image"></div></div><p class="username margin-user-name" onclick="profile(${post.id})">${post.username}</p></div><i class="fas fa-ellipsis-v  icon-option respondive-dots" onclick="reportPost()"></i></div><div class="post-content"><img src="${post.postcontent}.jpg" alt="" class="post-image" id="${post.idp}" ondblclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"><div class="lds-heart" id="${post.hrt}"><div></div></div></div><div class="post-functions"><div class="left-functions"><i class="far fa-heart icon-option icon-functions" id="${post.likes}" onclick="showLikeOnPost(${post.hrt},${post.likes},${post.likeinfo})"></i><i style="display:none" class="fas fa-heart icon-option icon-functions hide-heart-for-like" id="${post.likeinfo}"></i><i class="far fa-comment icon-option icon-functions"></i><i class="far fa-paper-plane icon-option icon-functions"></i></div><i class="far fa-bookmark icon-option"></i><i class="fas fa-bookmark icon-option" style="display:none"></i></div><div class="liked-info"><p class="liked-text font-for-comment">${post.ikedbySign}	&nbsp;</p><p class="thousand font-for-comment">${post.likescountrt}  ${post.likeTag}&nbsp;</p><p class="font-for-comment">${post.and}&nbsp;</p><p class="thousand font-for-comment">${post.incl}</p><p></p></div><br><div class="comment-info"><div><span class="comment"><span class="username username-profile">${post.username} 	&nbsp;</span><span class="comment-color font-for-comment">${post.commentContent}</span><span class="hashtags-tags font-for-comment">${post.hashatags}</span></div></div><div class="bottom-post"><p class="show-all">Show all comments (15)</p><div class="time"><p class="period">${post.time} ago</p><p>&nbsp;·&nbsp;</p><p class="translation">See translation</p></div></div><div class="leav-comment"><input type="text" name="comment"  autocomplete="off" class="leav-comment-input" placeholder="Leave your comment here..."><p class="send-comment">Post</p></div></div></div>`;
     });
     postLocation.innerHTML = result;
   }
@@ -355,37 +356,33 @@ class showContentOnPagesWhenLoadedClass {
 }
 
 //OBJECT FOR DATAPROVIDER
-let postsData = new DataProvider();
-let storyData = new DataProvider();
-let headerDat = new DataProvider();
-let footerData = new DataProvider();
-let headerMobileData = new DataProvider();
+let dataProvider = new DataProvider();
 
 //OBJECT FOR UI
 let ui = new showContentOnPagesWhenLoadedClass();
 
 //SHOW POSTS
-postsData
+dataProvider
    .getData()
    .then((data) => ui.displayPosts(data));
 
 //SHOW STORIES
-storyData
+dataProvider
    .getStories()
    .then((storyData) => ui.displayStories(storyData));
 
 //SHOW HEADER DESKTOP
-headerDat
+dataProvider
    .getHeaderIcons()
    .then((data) => ui.displayDesktopHeaderIcons(data));
 
 //SHOW FOOTER
-footerData
+dataProvider
   .getFooterData()
   .then((data) => ui.displayFooterIconsForCellPhone(data));
 
 //SHOW HEADER MOBILE
-headerMobileData
+dataProvider
   .getMobileHeader()
   .then((data) => ui.displayMobileHeaderIcons(data));
 
@@ -405,10 +402,17 @@ function reportPost() {
   let reportPopUp = document.getElementById("");
 }
 
+//OPEN PROFILE
+function profile(id) {
+  sessionStorage.setItem("profileID",id);
+  window.location.href = "profiles.html"
+}
+
+
 //SET HEADER BORDER 
 window.addEventListener("scroll", function(){
 	var scrollTop = window.pageYOffset;
-  if(scrollTop >= '60' && window.innerWidth <= '600'){
+  if(scrollTop >= '60' ){
 document.querySelector('.header-index').classList.add('show');
   }else{
     document.querySelector('.header-index').classList.remove('show');

@@ -20,7 +20,7 @@ body{
 /*---------------------------------------HEADER---------------------------------------*/
 .header-index{
     width: 100%;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgb(214, 212, 212);
     padding-top: 5px;
     padding-bottom: 5px;
     display: flex;
@@ -112,7 +112,8 @@ body{
 .swiper1{
     width: 550px;
     padding-top:10px;
-    border:1px solid ;
+    border:1px solid;
+
     z-index: 2;
 }
 #story-index{
@@ -409,4 +410,11 @@ body{
     z-index:8;
     position:fixed;
     bottom:0px;
+}
+
+.header-profile{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center
 }

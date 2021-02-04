@@ -4,7 +4,7 @@
     --border-color:#ececec;
 }
 
-.header-index,.footer-index,.body,.search-results-here,.white-frame,.post,.post-index,.footer-index,.section-index,.white-index,.search-index
+.header-index,.header-profile,.profile-white-frame,.footer-index,.body,.search-results-here,.white-frame,.post,.post-index,.footer-index,.section-index,.white-index,.search-index
 {
     background-color: var(--bg-color);
 }
@@ -13,7 +13,7 @@
     color: var(--txt-color);
 }
 
-.search-index,.search-index:focus,.search-results-here,.post,.leav-comment,.footer-index,.search-index,.swiper1
+.search-index,.search-index:focus,.search-results-here,.post,.leav-comment,.footer-index,.search-index,.swiper1,.header-profile
 {
   border-color: var(--border-color);
 }

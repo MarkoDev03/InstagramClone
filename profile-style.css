@@ -1,0 +1,168 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+
+
+/*HEADER*/
+.header-profile{
+    width: 100%;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index:8;
+    position:fixed;
+    top:0px;
+    height: 60px;
+
+}
+.profile-username{
+    font-size: 25px;
+}
+.profile-notification{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------------------PROFILE-SECTION---------------------*/
+.section-profile{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    margin-top: 100px;
+}
+
+/*---------------------------------SET PROFILE INFO----------------------*/
+.data-about-profile{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    height: fit-content;
+    width: 50%;
+}
+
+
+
+
+/*INFO ABOUT PROFILEIMAGE AND EXT.--------------------------------------------.*/
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 100%;
+}
+.profile-frame{
+    width: 146px;
+    height: 146px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #1952fd 90%);
+}
+.profile-white-frame{
+    width: 140px;
+    height: 140px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+.profile-image-pg{
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+}
+
+/*INFO ABOUT FOLLOWING*/
+.follower-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.follower-block{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    height: fit-content;
+    margin: 20px;
+
+}
+.follower-number{
+    font-size: 30px;
+    font-weight:800;
+}
+/*---------------------BIO - TYPE ------------------------------*/
+.profile-name-bio-type{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+.profile-name-bio-type p{
+    margin:1px;
+    
+}
+.followed-by{
+    font-weight:800;
+    font-size:18px
+}
+.biography{
+    font-size:18px
+}
+.follower-name{
+    font-size: 15px;
+    font-weight:300;
+    margin-top: -30px;
+}
+
+
+/*FOLLOW BUTTONS*/
+.profile-functions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.follow{
+    padding:10px;
+   text-align: center;
+   font-size: 15px;
+   background-color: transparent;
+   border-radius: 5px;
+   border:1px solid;
+   outline: none;
+   border-color: #d6d5d5;
+   font-weight:700;
+}
+.follow:focus{
+    border-radius: 5px;
+    border:1px solid;
+    outline: none;
+    border-color: #d6d5d5;
+}
+.button-width{
+    padding-left: 80px;
+    padding-right:80px;
+}
+.profile-name{
+    font-weight: 900;
+    font-size: 20px;
+}
+.personalisation{
+    color: rgb(196, 190, 190);
+}
+

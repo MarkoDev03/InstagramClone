@@ -64,9 +64,7 @@
     }
     .swiper1{
         width: 100%;       
-        
-        margin-top: -17px;
-
+        margin-top: -22px;
     }
     #story-index{
         padding:0px
@@ -108,13 +106,13 @@
     }
     .username{
         font-weight: 900;        
-        font-size:18px
+        font-size:15px
     }
     .margin-user-name{
         margin-left: 10px;
     }
     .font-for-comment{
-        font-size:18px
+        font-size:15px
     }
     .respondive-dots{
         font-size:20px

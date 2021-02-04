@@ -1,6 +1,6 @@
 //ROOT
 var root = document.documentElement;
-document.querySelector('.headline-image').src = './media/headline-black.png';
+//document.querySelector('.headline-image').src = './media/headline-black.png';
 
 //SWITCH MODE
 function DarkMode() {
@@ -10,7 +10,8 @@ function DarkMode() {
   if (backgroundColor == "white" && textColor == "black" && borderColor=="#d6d5d5") {
     root.style.setProperty("--bg-color", "black");
     root.style.setProperty("--txt-color", "white");
-    root.style.setProperty("--border-color", "#212121");//dd
+    root.style.setProperty("--border-color", "#212121");
+    document.querySelector('.header-index').style.borderColor = "#212121";
     document.querySelector('.headline-image').src = './media/headline-white.png';
     localStorage.setItem("colorTheme", "dark");
   } else {
@@ -18,6 +19,7 @@ function DarkMode() {
     root.style.setProperty("--txt-color", "black");
    root.style.setProperty("--border-color", "#d6d5d5");
     document.querySelector('.headline-image').src = './media/headline-black.png';
+    document.querySelector('.header-index').style.borderColor = "#d6d5d5";
     localStorage.setItem("colorTheme", "white");
   }
 }
@@ -30,10 +32,12 @@ if (theme == null || theme == "white") {
   root.style.setProperty("--bg-color", "white");
   root.style.setProperty("--txt-color", "black");
   root.style.setProperty("--border-color", "#d6d5d5");
+  document.querySelector('.header-index').style.borderColor = "#d6d5d5";
   document.querySelector('.headline-image').src = './media/headline-black.png';
 } else {
     root.style.setProperty("--bg-color", "black");
     root.style.setProperty("--txt-color", "white");
    root.style.setProperty("--border-color", "#212121");//d
+   document.querySelector('.header-index').style.borderColor = "#212121";
     document.querySelector('.headline-image').src = './media/headline-white.png';
 }
