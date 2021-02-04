@@ -363,27 +363,27 @@ let ui = new showContentOnPagesWhenLoadedClass();
 
 //SHOW POSTS
 dataProvider
-   .getData()
+   .getData()//FUNCTION IN CLASS
    .then((data) => ui.displayPosts(data));
 
 //SHOW STORIES
 dataProvider
-   .getStories()
+   .getStories()//FUNCTION IN CLASS
    .then((storyData) => ui.displayStories(storyData));
 
 //SHOW HEADER DESKTOP
 dataProvider
-   .getHeaderIcons()
+   .getHeaderIcons()//FUNCTION IN CLASS
    .then((data) => ui.displayDesktopHeaderIcons(data));
 
 //SHOW FOOTER
 dataProvider
-  .getFooterData()
+  .getFooterData()//FUNCTION IN CLASS
   .then((data) => ui.displayFooterIconsForCellPhone(data));
 
 //SHOW HEADER MOBILE
 dataProvider
-  .getMobileHeader()
+  .getMobileHeader()//FUNCTION IN CLASS
   .then((data) => ui.displayMobileHeaderIcons(data));
 
 //LIKE FUNCTIONS
@@ -407,7 +407,6 @@ function profile(id) {
   sessionStorage.setItem("profileID",id);
   window.location.href = "profiles.html"
 }
-
 
 //SET HEADER BORDER 
 window.addEventListener("scroll", function(){

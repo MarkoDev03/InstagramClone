@@ -23,8 +23,9 @@
             "post":"9",
             "followers":"4,398",
             "following":"958",
-            "fullname":"Off White",
+            "fullname":"⚜️Off White⚜️",
             "biography":"Lorem Ipsum is simply dummy  when an  took a galley of type and scrambled"
+            
         },
         {
             "username": "natureig",
@@ -155,7 +156,7 @@
             "post":"9",
             "followers":"58",
             "following":"958",
-            "fullname":"Design",
+            "fullname":"⚜️Design⚜️",
             "biography":"Lorem Ipsum is simply dummy  when an  took a galley of type and scrambled"
         },
         {
@@ -257,7 +258,7 @@
             "post":"22",
             "followers":"10k",
             "following":"98",
-            "fullname":"Just Smile",
+            "fullname":"⚜️Just Smile⚜️",
             "biography":"Lorem Ipsum is simply dummy  when an  took a galley of type and scrambled"
         },
         {
@@ -437,6 +438,108 @@
         {
             "class": "fa-comment phone-icons",
             "function": "messages"
+        }
+    ],
+    "highlights":[
+        {
+            "photo":"./media/slika1",
+            "photo1":"./media/slika2",
+            "photo2":"./media/slika3",
+            "photo3":"./media/slika4",
+            "text":"😎",
+            "text1":"😜",
+            "text2":"👍",
+            "text3":"👨‍💻",
+            "id":1,
+            "class":""
+        },
+        {
+            "photo":"./media/slika3",
+            "photo1":"./media/slika2",
+            "photo2":"",
+            "photo3":"",
+            "text":"😎",
+            "text1":"👍🏽",
+            "text2":"",
+            "text3":"",
+            "id":2
+        },
+        {
+            "photo":"../media/slika1",
+            "photo1":"",
+            "photo2":"",
+            "photo3":"",
+            "text":"🚵🏿‍♀️",
+            "text1":"",
+            "text2":"",
+            "text3":"",
+            "id":3
+        },
+        {
+            "photo":"./media/slika3",
+            "photo1":"./media/slika2",
+            "photo2":"./media/slika4",
+            "photo3":"./media/slika1",
+            "text":"💯",
+            "text1":"💯",
+            "text2":"💯",
+            "text3":"💯",
+            "id":4
+        }, 
+        {
+            "photo":"./media/slika3",
+            "photo1":"./media/slika2",
+            "photo2":"./media/slika4",
+            "photo3":"./media/slika1",
+            "text":"🍻",
+            "text1":"😜",
+            "text2":"😎",
+            "text3":"⚽️",
+            "id":5
+        },
+        {
+            "photo":"./media/slika2",
+            "photo1":"./media/slika2",
+            "photo2":"./media/slika1",
+            "photo3":"",
+            "text":"😎",
+            "text1":"😜",
+            "text2":"🚗",
+            "text3":"",
+            "id":6
+        },
+        {
+            "photo":"./media/slika1",
+            "photo1":"./media/slika4",
+            "photo2":"./media/slika3",
+            "photo3":"./media/slika2",
+            "text":"🧬",
+            "text1":"💯",
+            "text2":"😎",
+            "text3":"💉",
+            "id":7
+        },
+        {
+            "photo":"./media/slika1",
+            "photo1":"./media/slika4",
+            "photo2":"./media/slika3",
+            "photo3":"./media/slika2",
+            "text":"😎",
+            "text1":"😜",
+            "text2":"😎",
+            "text3":"😎",
+            "id":8
+        },
+        {
+            "photo":"./media/slika2",
+            "photo1":"./media/slika1",
+            "photo2":"./media/slika4",
+            "photo3":"./media/slika1",
+            "text":"⚜️",
+            "text1":"⚜️",
+            "text2":"⚜️",
+            "text3":"⚜️",
+            "id":79999999
         }
     ]
 }

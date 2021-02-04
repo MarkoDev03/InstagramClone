@@ -8,7 +8,7 @@
 {
     background-color: var(--bg-color);
 }
-.icon-option,.username-story,.username,.liked-info p,.translation,.comment-color,.margin-user,.leav-comment p
+.icon-option,.username-story,.username,.liked-info p,.translation,.comment-color,.margin-user,.leav-comment,.color-change
 {
     color: var(--txt-color);
 }
@@ -32,4 +32,7 @@
     border-bottom: 1px solid;
     border-color:var(--border-color);
  }
+}
+.send-comment{
+    color: #1952fd;
 }
