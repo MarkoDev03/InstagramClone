@@ -287,6 +287,7 @@ class DataProvider {
       //console.log("Connection with database successed");
     }
   }
+
 }
 
 /*UI CLASS FOR ALL POSTS */

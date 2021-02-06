@@ -212,6 +212,29 @@ body{
 .none{
     display:none;
 }
-.first-margin{
-    margin-left: 0px;
+.margin{
+    margin-left: 30px;
+}
+
+/*----------------------------------------------------------------PROFILE VIEW -----------------------------------------------------*/
+.profile-view{
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top:10px
+}
+.profile-button{
+    display:inline-block;
+    width: 50%;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    font-size: 30px;
+    border-bottom:2px solid ;
+    padding-bottom:10px;
+}
+.border-bottom{
+    border-bottom:2px solid;
 }

@@ -49,6 +49,25 @@ class DataProvider {
       console.log(error);
     }
   }
+
+    //GET SELECTED ITEMS FUNCTIONS
+    async getItems() {
+    try{
+      let API = "data.json";
+      let fetchData = await fetch(API);
+      let data = await fetchData.json();
+      let items = data.selectedButton;
+      items = items.map(item =>{
+        let itemClass = item.class;
+        return{itemClass};
+      });
+      return items;
+    }catch(error){
+       console.log(error);
+    }finally{
+
+    }
+    }
 }
 
 //CLASS FOR USER INTERFACE
@@ -114,6 +133,17 @@ class profileUserInterface{
       document.querySelector('.story-highlights').innerHTML = result;   
     }
 
+    //SHOW SELECT BUTTON OPTIONS
+    showSelectButton(items){
+    let result = '';
+    items.forEach(item =>{
+      result += `<i class="${item.itemClass}"></i>`;
+    });
+
+    //SHOW CONTENT ON PAGE
+    document.querySelector('.profile-view').innerHTML = result;
+    }
+
 }
 
 //DATAPROVIDER OBJECTS
@@ -124,6 +154,7 @@ var userInterface = new profileUserInterface();
 dataProvider.getProfile().then(data => userInterface.displayProfile(data));
 //SHOW HIGHLIGHTS 
 dataProvider.getHighlight().then(data => userInterface.showHighlight(data));
+dataProvider.getItems().then(data => userInterface.showSelectButton(data));
 
 //GO TO INDEX PAGE
 function indexPage(){

@@ -468,7 +468,7 @@
             "text3":"",
             "id":2,
             "class1":" ",
-            "class2":" ",
+            "class2":"margin",
             "class3":"none",
             "class4":"none",
             "displayclass":"custom-display"
@@ -531,9 +531,9 @@
             "text2":"🚗",
             "text3":"",
             "id":6,
-            "class1":" ",
-            "class2":" ",
-            "class3":" ",
+            "class1":"margin",
+            "class2":"margin",
+            "class3":"margin",
             "class4":"none",
             "displayclass":"custom-display"
         },
@@ -584,6 +584,13 @@
             "class3":" ",
             "class4":" ",
             "displayclass":"a"
+        }
+    ],
+    "selectedButton":[
+        {
+            "class":"fas fa-th profile-button border-bottom"
+        },{
+            "class":"far fa-address-card profile-button"
         }
     ]
 }

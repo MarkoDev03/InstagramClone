@@ -2,13 +2,14 @@
     --bg-color:white;
     --txt-color:black;
     --border-color:#ececec;
+    --selected-item:#cacaca;
 }
 
 .header-index,.header-profile,.profile-white-frame,.footer-index,.body,.search-results-here,.white-frame,.post,.post-index,.footer-index,.section-index,.white-index,.search-index
 {
     background-color: var(--bg-color);
 }
-.icon-option,.username-story,.username,.liked-info p,.translation,.comment-color,.margin-user,.middle-dot,.leav-comment,.color-change
+.icon-option,.username-story,.username,.liked-info p,.translation,.comment-color,.margin-user,.middle-dot,.border-bottom,.leav-comment,.color-change
 {
     color: var(--txt-color);
 }
@@ -17,6 +18,20 @@
 {
   border-color: var(--border-color);
 }
+.border-bottom{
+    border-color: var(--txt-color);
+}
+.profile-button{
+    border-color: var(--selected-item);
+    color: var(--selected-item);
+}
+.border-bottom{
+    border-color: var(--txt-color);
+    color: var(--txt-color);
+}
+
+
+
 @media only screen and (max-width:600px) and (min-width:300px) {
 .swiper1{
     border-top: none;
