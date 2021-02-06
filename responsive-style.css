@@ -134,3 +134,24 @@
  
     
 }
+
+
+
+/*------------------------------------------------------------RESPONSIVE FOR PROFILE------------------------------------*/  
+@media only screen and (max-width:1680px) and (min-width:1020px){
+    .section-profile{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: fit-content;
+        margin-top: 100px;
+    }
+    .button-width{
+        padding-left: 70px;
+        padding-right:70px;
+    }
+}

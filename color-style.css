@@ -8,7 +8,7 @@
 {
     background-color: var(--bg-color);
 }
-.icon-option,.username-story,.username,.liked-info p,.translation,.comment-color,.margin-user,.leav-comment,.color-change
+.icon-option,.username-story,.username,.liked-info p,.translation,.comment-color,.margin-user,.middle-dot,.leav-comment,.color-change
 {
     color: var(--txt-color);
 }

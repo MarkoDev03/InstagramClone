@@ -41,7 +41,8 @@ class DataProvider {
         let photo2 = item.photo2,text2 = item.text2;
         let photo3 = item.photo3,text3 = item.text3;
         let id = item.id;
-        return {photo, photo1, photo2, photo3, text, text1, text2, text3, id}
+        let class1 = item.class1,class2 = item.class2,class3 = item.class3,class4 = item.class4,displayclass= item.displayclass;
+        return {photo, photo1, photo2, photo3, text, text1, text2, text3, id,class1,class2,class3,class4,displayclass}
       })
       return result;    
     }catch (error){
@@ -97,10 +98,19 @@ class profileUserInterface{
     showHighlight(data) {
       let result = '';
       data.forEach(item => {
+        //STATEMENT FOR DISPLAYING
         if(item.id == sessionStorage.getItem("profileID")) {
-        result = `<div class="highlight"><div class="highlights-frame"><div class="white-highlights"><img src="${item.photo}.png" alt="" class="highlights-image"></div></div><p class="highlight-name">${item.text}</p></div><div class="highlight"><div class="highlights-frame"><div class="white-highlights"><img src="${item.photo1}.png" alt="" class="highlights-image"></div></div><p class="highlight-name">${item.text1}</p></div><div class="highlight"><div class="highlights-frame"><div class="white-highlights"><img src="${item.photo2}.png" alt="" class="highlights-image"></div></div><p class="highlight-name">${item.text2}</p></div><div class="highlight"><div class="highlights-frame"><div class="white-highlights"><img src="${item.photo3}.png" alt="" class="highlights-image"></div></div><p class="highlight-name">${item.text3}</p></div>`;
+          
+          document.querySelector('.story-highlights').classList.add(item.displayclass);
+        //CONTENT  
+        result = `<div class="highlight ${item.class1} first-margin"><div class="highlights-frame"><div class="white-highlights"><img src="${item.photo}.png" alt="" class="highlights-image"></div></div><p class="highlight-name">${item.text}</p></div>
+        <div class="highlight ${item.class2}"><div class="highlights-frame"><div class="white-highlights"><img src="${item.photo1}.png" alt="" class="highlights-image"></div></div><p class="highlight-name">${item.text1}</p></div>
+        <div class="highlight ${item.class3}"><div class="highlights-frame"><div class="white-highlights"><img src="${item.photo2}.png" alt="" class="highlights-image"></div></div><p class="highlight-name">${item.text2}</p></div>
+        <div class="highlight ${item.class4}"><div class="highlights-frame"><div class="white-highlights"><img src="${item.photo3}.png" alt="" class="highlights-image"></div></div><p class="highlight-name">${item.text3}</p></div>`;
         }
       });
+
+      //SHOW CONTENT HERE
       document.querySelector('.story-highlights').innerHTML = result;   
     }
 

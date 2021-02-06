@@ -451,7 +451,11 @@
             "text2":"👍",
             "text3":"👨‍💻",
             "id":1,
-            "class":""
+            "class1":" ",
+            "class2":" ",
+            "class3":" ",
+            "class4":" ",
+            "displayclass":"a"
         },
         {
             "photo":"./media/slika3",
@@ -462,7 +466,12 @@
             "text1":"👍🏽",
             "text2":"",
             "text3":"",
-            "id":2
+            "id":2,
+            "class1":" ",
+            "class2":" ",
+            "class3":"none",
+            "class4":"none",
+            "displayclass":"custom-display"
         },
         {
             "photo":"../media/slika1",
@@ -473,7 +482,12 @@
             "text1":"",
             "text2":"",
             "text3":"",
-            "id":3
+            "id":3,
+            "class1":" ",
+            "class2":"none",
+            "class3":"none",
+            "class4":"none",
+            "displayclass":"custom-display"
         },
         {
             "photo":"./media/slika3",
@@ -484,7 +498,12 @@
             "text1":"💯",
             "text2":"💯",
             "text3":"💯",
-            "id":4
+            "id":4,
+            "class1":" ",
+            "class2":" ",
+            "class3":" ",
+            "class4":" ",
+            "displayclass":"a"
         }, 
         {
             "photo":"./media/slika3",
@@ -495,7 +514,12 @@
             "text1":"😜",
             "text2":"😎",
             "text3":"⚽️",
-            "id":5
+            "id":5,
+            "class1":" ",
+            "class2":" ",
+            "class3":" ",
+            "class4":" ",
+            "displayclass":"a"
         },
         {
             "photo":"./media/slika2",
@@ -506,7 +530,12 @@
             "text1":"😜",
             "text2":"🚗",
             "text3":"",
-            "id":6
+            "id":6,
+            "class1":" ",
+            "class2":" ",
+            "class3":" ",
+            "class4":"none",
+            "displayclass":"custom-display"
         },
         {
             "photo":"./media/slika1",
@@ -517,7 +546,12 @@
             "text1":"💯",
             "text2":"😎",
             "text3":"💉",
-            "id":7
+            "id":7,
+            "class1":" ",
+            "class2":" ",
+            "class3":" ",
+            "class4":" ",
+            "displayclass":"a"
         },
         {
             "photo":"./media/slika1",
@@ -528,7 +562,12 @@
             "text1":"😜",
             "text2":"😎",
             "text3":"😎",
-            "id":8
+            "id":8,
+            "class1":" ",
+            "class2":" ",
+            "class3":" ",
+            "class4":" ",
+            "displayclass":"a"
         },
         {
             "photo":"./media/slika2",
@@ -539,7 +578,12 @@
             "text1":"⚜️",
             "text2":"⚜️",
             "text3":"⚜️",
-            "id":79999999
+            "id":79999999,
+            "class1":" ",
+            "class2":" ",
+            "class3":" ",
+            "class4":" ",
+            "displayclass":"a"
         }
     ]
 }
