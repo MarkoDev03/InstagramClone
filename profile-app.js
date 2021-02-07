@@ -58,8 +58,8 @@ class DataProvider {
       let data = await fetchData.json();
       let items = data.selectedButton;
       items = items.map(item =>{
-        let itemClass = item.class;
-        return{itemClass};
+        let itemClass = item.class,first = item.first, second = item.second,functionClick = item.functionCl;
+        return{itemClass,first,second,functionClick};
       });
       return items;
     }catch(error){
@@ -134,16 +134,16 @@ class profileUserInterface{
     }
 
     //SHOW SELECT BUTTON OPTIONS
-    showSelectButton(items){
+    showSelectButton(items) {
     let result = '';
     items.forEach(item =>{
-      result += `<i class="${item.itemClass}"></i>`;
+      result += `<i class="${item.itemClass} ${item.first} ${item.second}" onclick="${item.functionClick}"></i>`;
     });
 
     //SHOW CONTENT ON PAGE
     document.querySelector('.profile-view').innerHTML = result;
     }
-
+    
 }
 
 //DATAPROVIDER OBJECTS
@@ -159,4 +159,10 @@ dataProvider.getItems().then(data => userInterface.showSelectButton(data));
 //GO TO INDEX PAGE
 function indexPage(){
     window.location.href = "index.html";
+}
+function clickEvents(){
+  /*var first = document.getElementsByClassName('first');
+
+    alert("d");*/
+  
 }

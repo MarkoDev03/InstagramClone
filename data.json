@@ -588,9 +588,15 @@
     ],
     "selectedButton":[
         {
-            "class":"fas fa-th profile-button border-bottom"
+            "class":"fas fa-th profile-button",
+            "first":"first",
+            "second":" ",
+            "functionCl":"clickEvents()"
         },{
-            "class":"far fa-address-card profile-button"
+            "class":"far fa-address-card profile-button",
+            "first":"f",
+            "second":"second",
+            "functionCl":"declickEvents()"
         }
     ]
 }
