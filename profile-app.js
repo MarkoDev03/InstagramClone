@@ -50,24 +50,24 @@ class DataProvider {
     }
   }
 
-    //GET SELECTED ITEMS FUNCTIONS
-    async getItems() {
-    try{
-      let API = "data.json";
-      let fetchData = await fetch(API);
-      let data = await fetchData.json();
-      let items = data.selectedButton;
-      items = items.map(item =>{
-        let itemClass = item.class,first = item.first, second = item.second,functionClick = item.functionCl;
-        return{itemClass,first,second,functionClick};
-      });
-      return items;
-    }catch(error){
-       console.log(error);
-    }finally{
-
-    }
-    }
+     //GET SELECTED ITEMS FOR POSTS
+     async getPosts() {
+      try{
+        let API = "data.json";
+        let fetchData = await fetch(API);
+        let data = await fetchData.json();
+        let items = data.postsInPorfile;
+        items = items.map(item =>{
+        let photo11 = item.photo11,photo2 = item.photo2,photo3 = item.photo3,photo4 = item.photo4,photo5 = item.photo5,photo6 = item.photo6,photo7 = item.photo7,photo8 = item.photo8,photo9 = item.photo9,id = item.id;
+          return{photo11,photo2,photo3,photo4,photo5,photo6,photo7,photo8,photo9,id};
+        });
+        return items;
+      }catch(error){
+         console.log(error);
+      }finally{
+  
+      }
+      }
 }
 
 //CLASS FOR USER INTERFACE
@@ -105,10 +105,13 @@ class profileUserInterface{
 
         //SHOW CONTENT PROFILE HEADER (PROFILEIMAGE, FOLLOWERS...)
         document.querySelector('.header-content').innerHTML = content;
+
         //SHOW INCOS IN HEADER
         document.querySelector('.header-profile').innerHTML = result;
+
         //SHOW FULLNAME, BIOGRAPHY, FOLLOWED BY, 
         document.querySelector('.profile-name-bio-type').innerHTML = object;
+
         //SHOW FOLLOW, MESSAGE AND DROPDOWN LIST
         document.querySelector('.profile-functions').innerHTML = buttonobject;
     }
@@ -132,17 +135,59 @@ class profileUserInterface{
       //SHOW CONTENT HERE
       document.querySelector('.story-highlights').innerHTML = result;   
     }
+    
+    //SHOW SLECTED BUTTONS
+    showSelectedButtons() {
+    document.querySelector('.profile-view').innerHTML = `<i class="fas fa-th profile-button block-button first-button" onclick="triggerClick()" id="firstOne"></i>
+    <i class="far fa-address-card profile-button block-button" id="tagged"></i>`;
+    
+    var all = document.getElementById('firstOne');
+    var tagged = document.getElementById('tagged');
+    
+        //ADD CLASS ONLOAD
+        window.addEventListener('load',() =>{
+               tagged.classList.remove('border-bottom');
+               all.classList.add('border-bottom');
+         });
 
-    //SHOW SELECT BUTTON OPTIONS
-    showSelectButton(items) {
-    let result = '';
-    items.forEach(item =>{
-      result += `<i class="${item.itemClass} ${item.first} ${item.second}" onclick="${item.functionClick}"></i>`;
-    });
+        //TAGGED PHOTOS
+        tagged.addEventListener('click',() =>{
+              tagged.classList.add('border-bottom');
+              all.classList.remove('border-bottom');
+         });
+ 
+        //ALL PHOTOS
+        all.addEventListener('click',() =>{
+                tagged.classList.remove('border-bottom');
+                all.classList.add('border-bottom');
+         });
+   }
 
-    //SHOW CONTENT ON PAGE
-    document.querySelector('.profile-view').innerHTML = result;
-    }
+   //SHOW POSTS ON PAGE IN GRID
+   showPostsOnPage(items){
+     let result = '';
+     items.forEach(item => {
+      if(item.id == sessionStorage.getItem("profileID")) {
+        result += `
+        
+        <img src="${item.photo11}.jpg" alt="" class="picture" >
+        <img src="${item.photo2}.jpg" alt="" class="picture" >
+        <img src="${item.photo3}.jpg" alt="" class="picture" >
+        <img src="${item.photo4}.jpg" alt="" class="picture" >
+        <img src="${item.photo5}.jpg" alt="" class="picture" >
+        <img src="${item.photo6}.jpg" alt="" class="picture" >
+        <img src="${item.photo7}.jpg" alt="" class="picture" >
+        <img src="${item.photo8}.jpg" alt="" class="picture" >
+        <img src="${item.photo9}.jpg" alt="" class="picture" >
+        `;
+      
+      }
+
+     });
+
+     //SHOW POSTS ON PAGE
+     document.querySelector('.profile-posts').innerHTML = result;
+   }
     
 }
 
@@ -154,15 +199,13 @@ var userInterface = new profileUserInterface();
 dataProvider.getProfile().then(data => userInterface.displayProfile(data));
 //SHOW HIGHLIGHTS 
 dataProvider.getHighlight().then(data => userInterface.showHighlight(data));
-dataProvider.getItems().then(data => userInterface.showSelectButton(data));
+//SHOW POSTS ON PAGE IN GRID VIEW
+dataProvider.getPosts().then(data => userInterface.showPostsOnPage(data));
+
+//CALL FUNCTION FOR SELECT BUTTONS
+userInterface.showSelectedButtons();
 
 //GO TO INDEX PAGE
 function indexPage(){
     window.location.href = "index.html";
-}
-function clickEvents(){
-  /*var first = document.getElementsByClassName('first');
-
-    alert("d");*/
-  
 }

@@ -588,15 +588,127 @@
     ],
     "selectedButton":[
         {
-            "class":"fas fa-th profile-button",
-            "first":"first",
-            "second":" ",
-            "functionCl":"clickEvents()"
+            "first":"fas fa-th profile-button border-bottom",
+            "second":"s"
         },{
-            "class":"far fa-address-card profile-button",
-            "first":"f",
-            "second":"second",
-            "functionCl":"declickEvents()"
+            "first":"a",
+            "second":"far fa-address-card profile-button"
+        }
+    ],
+    "postsInPorfile":[
+        {
+            "photo11":"./media/slikaprofil1",
+            "photo2":"./media/slikaprofil2",
+            "photo3":"./media/slikaprofil3",
+            "photo4":"./media/slikaprofil4",
+            "photo5":"./media/slikaprofil5",
+            "photo6":"./media/slikaprofil6",
+            "photo7":"./media/slikaprofil7",
+            "photo8":"./media/slikaprofil8",
+            "photo9":"./media/slikaprofil9",
+            "id":1
+        },
+        {
+            
+            "photo11":"./media/slikaprofil1",
+            "photo2":"./media/slikaprofil2",
+            "photo3":"./media/slikaprofil3",
+            "photo4":"./media/slikaprofil4",
+            "photo5":"./media/slikaprofil5",
+            "photo6":"./media/slikaprofil6",
+            "photo7":"./media/slikaprofil7",
+            "photo8":"./media/slikaprofil8",
+            "photo9":"./media/slikaprofil9",
+            "id":2
+        },
+        {
+            "photo11":"./media/slikaprofil1",
+            "photo2":"./media/slikaprofil2",
+            "photo3":"./media/slikaprofil3",
+            "photo4":"./media/slikaprofil4",
+            "photo5":"./media/slikaprofil5",
+            "photo6":"./media/slikaprofil6",
+            "photo7":"./media/slikaprofil7",
+            "photo8":"./media/slikaprofil8",
+            "photo9":"./media/slikaprofil9",
+            "id":3
+        },
+        {
+            
+            "photo11":"./media/slikaprofil1",
+            "photo2":"./media/slikaprofil2",
+            "photo3":"./media/slikaprofil3",
+            "photo4":"./media/slikaprofil4",
+            "photo5":"./media/slikaprofil5",
+            "photo6":"./media/slikaprofil6",
+            "photo7":"./media/slikaprofil7",
+            "photo8":"./media/slikaprofil8",
+            "photo9":"./media/slikaprofil9",
+            "id":4
+        },
+        {
+            "photo11":"./media/slikaprofil1",
+            "photo2":"./media/slikaprofil2",
+            "photo3":"./media/slikaprofil3",
+            "photo4":"./media/slikaprofil4",
+            "photo5":"./media/slikaprofil5",
+            "photo6":"./media/slikaprofil6",
+            "photo7":"./media/slikaprofil7",
+            "photo8":"./media/slikaprofil8",
+            "photo9":"./media/slikaprofil9",
+            "id":5
+        },
+        {
+            
+            "photo11":"./media/slikaprofil1",
+            "photo2":"./media/slikaprofil2",
+            "photo3":"./media/slikaprofil3",
+            "photo4":"./media/slikaprofil4",
+            "photo5":"./media/slikaprofil5",
+            "photo6":"./media/slikaprofil6",
+            "photo7":"./media/slikaprofil7",
+            "photo8":"./media/slikaprofil8",
+            "photo9":"./media/slikaprofil9",
+            "id":6
+        },
+        {
+            
+            "photo11":"./media/slikaprofil1",
+            "photo2":"./media/slikaprofil2",
+            "photo3":"./media/slikaprofil3",
+            "photo4":"./media/slikaprofil4",
+            "photo5":"./media/slikaprofil5",
+            "photo6":"./media/slikaprofil6",
+            "photo7":"./media/slikaprofil7",
+            "photo8":"./media/slikaprofil8",
+            "photo9":"./media/slikaprofil9",
+            "id":7
+        },
+        {
+            
+            "photo11":"./media/slikaprofil1",
+            "photo2":"./media/slikaprofil2",
+            "photo3":"./media/slikaprofil3",
+            "photo4":"./media/slikaprofil4",
+            "photo5":"./media/slikaprofil5",
+            "photo6":"./media/slikaprofil6",
+            "photo7":"./media/slikaprofil7",
+            "photo8":"./media/slikaprofil8",
+            "photo9":"./media/slikaprofil9",
+            "id":8
+        },
+        {
+           
+            "photo11":"./media/slikaprofil1",
+            "photo2":"./media/slikaprofil2",
+            "photo3":"./media/slikaprofil3",
+            "photo4":"./media/slikaprofil4",
+            "photo5":"./media/slikaprofil5",
+            "photo6":"./media/slikaprofil6",
+            "photo7":"./media/slikaprofil7",
+            "photo8":"./media/slikaprofil8",
+            "photo9":"./media/slikaprofil9",
+            "id":79999999
         }
     ]
 }

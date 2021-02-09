@@ -138,7 +138,7 @@
 
 
 /*------------------------------------------------------------RESPONSIVE FOR PROFILE------------------------------------*/  
-@media only screen and (max-width:1680px) and (min-width:1020px){
+@media only screen and (max-width:1680px) and (min-width:1070px){
     .section-profile{
         display: flex;
         flex-direction:column;
@@ -154,4 +154,53 @@
         padding-left: 70px;
         padding-right:70px;
     }
+    .picture{
+        height: 140px;    
+    }
+}
+
+/*------------------------------------------------------------RESPONSIVE FOR PROFILE------------------------------------*/  
+@media only screen and (max-width:1070px) and (min-width:600px){
+    .section-profile{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: fit-content;
+        margin-top: 100px;
+    }
+    .button-width{
+        padding-left: 50px;
+        padding-right:50px;
+    }
+    .picture{
+        height: 120px;    
+    }
+
+    /*------------NUMBERS IN HEADER------*/
+    .follower-number{
+        font-size: 25px;
+        font-weight:800;
+    }
+    .follower-block{      
+        margin: 10px;
+    }
+
+
+    .profile-frame{
+        width: 115px;
+        height: 115px;       
+    }
+    .profile-white-frame{
+        width: 110px;
+        height: 110px;
+    }
+    .profile-image-pg{
+        width: 105px;
+        height: 105px;
+    }
+    
 }

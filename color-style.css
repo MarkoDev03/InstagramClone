@@ -5,7 +5,7 @@
     --selected-item:#cacaca;
 }
 
-.header-index,.header-profile,.profile-white-frame,.footer-index,.body,.search-results-here,.white-frame,.post,.post-index,.footer-index,.section-index,.white-index,.search-index
+.header-index,.header-profile,.white-highlights,.profile-white-frame,.footer-index,.body,.search-results-here,.white-frame,.post,.post-index,.footer-index,.section-index,.white-index,.search-index
 {
     background-color: var(--bg-color);
 }
@@ -18,10 +18,7 @@
 {
   border-color: var(--border-color);
 }
-.border-bottom{
-    border-color: var(--txt-color);
-}
-.profile-button{
+.block-button{
     border-color: var(--selected-item);
     color: var(--selected-item);
 }
