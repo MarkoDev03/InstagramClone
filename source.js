@@ -354,6 +354,7 @@ class showContentOnPagesWhenLoadedClass {
         <i class="far ${mobileHeaderIcons.classHeaderMobile} icon-option" onclick="${mobileHeaderIcons.functionHeaderMobile}()"></i>`;
     });
   }
+  
 }
 
 //OBJECT FOR DATAPROVIDER

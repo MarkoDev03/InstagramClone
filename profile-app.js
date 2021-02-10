@@ -99,7 +99,7 @@ class profileUserInterface{
               <p class="biography  color-change">${item.biography}</p><p class="followed-by  color-change">Followed by username_1, instagramaccount and 17 others</p>`
                    
               //SHOW FOLLOW, MESSAGE AND DROPDOWN LIST
-              buttonobject = `<button class="follow button-width color-change">Following</button><button class="follow button-width color-change">Message</button><button class="follow"><i class="fas fa-sort-down color-change"></i></button>`
+              buttonobject = `<button class="follow button-width color-change middle-buttons">Following</button><button class="follow button-width color-change  middle-buttons">Message</button><button class="follow left-button"><i class="fas fa-sort-down color-change"></i></button>`
             }
             });
 
@@ -114,6 +114,7 @@ class profileUserInterface{
 
         //SHOW FOLLOW, MESSAGE AND DROPDOWN LIST
         document.querySelector('.profile-functions').innerHTML = buttonobject;
+           
     }
 
     //SHOW HIGHLIGHTS
@@ -124,7 +125,7 @@ class profileUserInterface{
         if(item.id == sessionStorage.getItem("profileID")) {
           
           document.querySelector('.story-highlights').classList.add(item.displayclass);
-        //CONTENT  
+        //CONTENT FOR HIGHLIGHTS 
         result = `<div class="highlight ${item.class1} first-margin"><div class="highlights-frame"><div class="white-highlights"><img src="${item.photo}.png" alt="" class="highlights-image"></div></div><p class="highlight-name">${item.text}</p></div>
         <div class="highlight ${item.class2}"><div class="highlights-frame"><div class="white-highlights"><img src="${item.photo1}.png" alt="" class="highlights-image"></div></div><p class="highlight-name">${item.text1}</p></div>
         <div class="highlight ${item.class3}"><div class="highlights-frame"><div class="white-highlights"><img src="${item.photo2}.png" alt="" class="highlights-image"></div></div><p class="highlight-name">${item.text2}</p></div>
@@ -135,58 +136,65 @@ class profileUserInterface{
       //SHOW CONTENT HERE
       document.querySelector('.story-highlights').innerHTML = result;   
     }
-    
-    //SHOW SLECTED BUTTONS
-    showSelectedButtons() {
-    document.querySelector('.profile-view').innerHTML = `<i class="fas fa-th profile-button block-button first-button" onclick="triggerClick()" id="firstOne"></i>
-    <i class="far fa-address-card profile-button block-button" id="tagged"></i>`;
-    
-    var all = document.getElementById('firstOne');
-    var tagged = document.getElementById('tagged');
-    
-        //ADD CLASS ONLOAD
-        window.addEventListener('load',() =>{
-               tagged.classList.remove('border-bottom');
-               all.classList.add('border-bottom');
-         });
-
-        //TAGGED PHOTOS
-        tagged.addEventListener('click',() =>{
-              tagged.classList.add('border-bottom');
-              all.classList.remove('border-bottom');
-         });
- 
-        //ALL PHOTOS
-        all.addEventListener('click',() =>{
-                tagged.classList.remove('border-bottom');
-                all.classList.add('border-bottom');
-         });
-   }
 
    //SHOW POSTS ON PAGE IN GRID
    showPostsOnPage(items){
-     let result = '';
+     let result = '',taggedResult = '';
      items.forEach(item => {
       if(item.id == sessionStorage.getItem("profileID")) {
-        result += `
-        
-        <img src="${item.photo11}.jpg" alt="" class="picture" >
-        <img src="${item.photo2}.jpg" alt="" class="picture" >
-        <img src="${item.photo3}.jpg" alt="" class="picture" >
-        <img src="${item.photo4}.jpg" alt="" class="picture" >
-        <img src="${item.photo5}.jpg" alt="" class="picture" >
-        <img src="${item.photo6}.jpg" alt="" class="picture" >
-        <img src="${item.photo7}.jpg" alt="" class="picture" >
-        <img src="${item.photo8}.jpg" alt="" class="picture" >
-        <img src="${item.photo9}.jpg" alt="" class="picture" >
+        result += `  
+        <img src="${item.photo11}.jpg" alt="" class="picture">
+        <img src="${item.photo2}.jpg" alt="" class="picture">
+        <img src="${item.photo3}.jpg" alt="" class="picture">
+        <img src="${item.photo4}.jpg" alt="" class="picture">
+        <img src="${item.photo5}.jpg" alt="" class="picture">
+        <img src="${item.photo6}.jpg" alt="" class="picture">
+        <img src="${item.photo7}.jpg" alt="" class="picture">
+        <img src="${item.photo8}.jpg" alt="" class="picture">
+        <img src="${item.photo9}.jpg" alt="" class="picture">
         `;
-      
+       taggedResult = `<img src="${item.photo3}.jpg" alt="" class="picture marg-tag" ><img src="${item.photo2}.jpg" alt="" class="picture marg-tag" ><img src="${item.photo11}.jpg" alt="" class="picture marg-tag" >`;
       }
-
-     });
+  });
 
      //SHOW POSTS ON PAGE
      document.querySelector('.profile-posts').innerHTML = result;
+
+
+     //SHOW ALL POSTS BUTTON
+     document.querySelector('.profile-view').innerHTML = `<i class="fas fa-th profile-button block-button first-button" onclick="triggerClick()" id="firstOne"></i>
+     <i class="far fa-address-card profile-button block-button" id="tagged"></i>`;
+     
+     var all = document.getElementById('firstOne');
+     var tagged = document.getElementById('tagged');
+
+     //ADD CLASS WHEN PAGE IS LOADED
+     all.classList.add('border-bottom');
+
+         //ADD CLASS ONLOAD
+         window.addEventListener('load',() =>{
+                tagged.classList.remove('border-bottom');
+                all.classList.add('border-bottom');
+          });
+ 
+         //TAGGED PHOTOS
+         tagged.addEventListener('click',() =>{
+               tagged.classList.add('border-bottom');
+               all.classList.remove('border-bottom');
+               document.querySelector('.profile-posts').innerHTML = null;
+               document.querySelector('.profile-posts').innerHTML = taggedResult;
+               
+ 
+          });
+  
+         //ALL PHOTOS
+         all.addEventListener('click',() =>{
+                 tagged.classList.remove('border-bottom');
+                 all.classList.add('border-bottom');
+
+                 //SHOW ALL POSTS ON PAGE
+                  document.querySelector('.profile-posts').innerHTML = result;
+          });
    }
     
 }
@@ -201,9 +209,6 @@ dataProvider.getProfile().then(data => userInterface.displayProfile(data));
 dataProvider.getHighlight().then(data => userInterface.showHighlight(data));
 //SHOW POSTS ON PAGE IN GRID VIEW
 dataProvider.getPosts().then(data => userInterface.showPostsOnPage(data));
-
-//CALL FUNCTION FOR SELECT BUTTONS
-userInterface.showSelectedButtons();
 
 //GO TO INDEX PAGE
 function indexPage(){

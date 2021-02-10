@@ -94,7 +94,6 @@ body{
     align-items:center;
     height: fit-content;
     margin: 20px;
-
 }
 .follower-number{
     font-size: 30px;
@@ -156,9 +155,11 @@ body{
     border-color: #d6d5d5;
 }
 .button-width{
-    padding-left: 80px;
-    padding-right:80px;
-    pointer-events: none;
+    text-align: center;
+    display: inline-block;
+    width: 45%;
+    justify-content:center;
+    align-items:center;
 }
 .profile-name{
     font-weight: 900;
@@ -273,4 +274,7 @@ body{
     width: 32%;
     background-size: cover;
     margin: auto;
+}
+.marg-tag{
+  margin:1px;
 }
