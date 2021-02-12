@@ -169,7 +169,9 @@ body{
 .personalisation{
     color: rgb(196, 190, 190);
 }
-
+.border-sty{
+    margin-right: 0px
+}
 
 /*---------------------------------------HIGHLIGHT---------------------------------------*/
 .highlight{
@@ -271,10 +273,14 @@ body{
 .picture{
     height: 170px;
     display: inline-block;
-    width: 32%;
+    width: 32.5%;
     background-size: cover;
     margin: auto;
 }
 .marg-tag{
-  margin:1px;
+    height: 170px;
+    display: inline-block;
+    width: 32.8%;
+    margin:1px;
+    background-size: cover;
 }

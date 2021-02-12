@@ -86,7 +86,7 @@ class profileUserInterface{
               document.title = item.username;
 
               //SHOW CONTENT IN HEADER
-              result = `<div class="profile-notification"><i class="fas fa-arrow-left icon-option" onclick="indexPage()"></i><p class="username profile-username">${item.username}<p></div><div class="profile-notification"><i class="far fa-bell icon-option"></i><i class="fas fa-ellipsis-v  icon-option"></i></div>`;
+              result = `<div class="profile-notification set-margin-left"><i class="fas fa-arrow-left icon-option" onclick="indexPage()"></i><p class="username profile-username user">${item.username}<p></div><div class="profile-notification set-margin-right"><i class="far fa-bell icon-option"></i><i class="fas fa-ellipsis-v  icon-option"></i></div>`;
              
               //SHOW PROFILEIMAGE, FOLLOWERS, FOLLOWING, POST COUNTER ON PAGE
               content = `<div class="profile-frame"><div class="profile-white-frame"><img src="${item.profileimage}.png" alt="" class="profile-image-pg"></div></div><div class="follower-info">
@@ -145,15 +145,15 @@ class profileUserInterface{
         result += `  
         <img src="${item.photo11}.jpg" alt="" class="picture">
         <img src="${item.photo2}.jpg" alt="" class="picture">
-        <img src="${item.photo3}.jpg" alt="" class="picture">
+        <img src="${item.photo3}.jpg" alt="" class="picture border-sty">
         <img src="${item.photo4}.jpg" alt="" class="picture">
         <img src="${item.photo5}.jpg" alt="" class="picture">
-        <img src="${item.photo6}.jpg" alt="" class="picture">
+        <img src="${item.photo6}.jpg" alt="" class="picture border-sty">
         <img src="${item.photo7}.jpg" alt="" class="picture">
         <img src="${item.photo8}.jpg" alt="" class="picture">
-        <img src="${item.photo9}.jpg" alt="" class="picture">
+        <img src="${item.photo9}.jpg" alt="" class="picture border-sty">
         `;
-       taggedResult = `<img src="${item.photo3}.jpg" alt="" class="picture marg-tag" ><img src="${item.photo2}.jpg" alt="" class="picture marg-tag" ><img src="${item.photo11}.jpg" alt="" class="picture marg-tag" >`;
+       taggedResult = `<img src="${item.photo9}.jpg" alt="" class="marg-tag" ><img src="${item.photo6}.jpg" alt="" class="marg-tag" ><img src="${item.photo11}.jpg" alt="" class="marg-tag " >`;
       }
   });
 

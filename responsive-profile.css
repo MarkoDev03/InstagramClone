@@ -1,0 +1,476 @@
+
+/*------------------------------------------------------------RESPONSIVE FOR PROFILE------------------------------------*/  
+@media only screen and (max-width:1680px) and (min-width:1070px){
+    .section-profile{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: fit-content;
+        margin-top: 100px;
+    }
+    .picture{
+        height: 140px;    
+    }
+}
+
+/*------------------------------------------------------------RESPONSIVE FOR PROFILE------------------------------------*/  
+@media only screen and (max-width:1070px) and (min-width:800px){
+    
+    
+    /*-------------section-----------*/
+    .section-profile{    
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .highlight{
+        margin-top:20px;
+    }
+    .white-highlights{
+        width: 72px;
+        height: 72px;
+    }
+    .highlights-image{
+        width: 65px;
+        height:65px;
+    }
+    .highlights-frame{
+        width:75px;
+        height: 75px;
+    }
+    .highlight-name{
+        font-size:17px
+    }
+    .profile-button{
+        font-size: 20px;
+    }
+    .profile-view{
+        margin-top: -25px;
+    }
+
+    /*------------NUMBERS IN HEADER------*/
+    .follower-number{
+        font-size: 20px;
+        font-weight:800;
+    }
+    .follower-block{      
+        margin: 10px;
+    }
+    .follower-name{
+        font-size: 15px;
+        margin-top: -20px;
+    }
+    .followed-by,.biography{
+        font-size:15px
+    }
+    .profile-name{
+        font-size: 16px;
+    }
+    .personalisation{
+        font-size:14px
+    }
+    
+ /*--------------IMAGE OF PROFILE AND HEADER---------*/
+    .profile-frame{
+        width: 110px;
+        height: 110px;       
+    }
+    .profile-white-frame{
+        width: 105px;
+        height: 105px;
+    }
+    .profile-image-pg{
+        width: 102px;
+        height: 102px;
+    }
+    .profile-username{
+        font-size: 20px;
+    }
+    .icon-option{
+        font-size: 20px;  
+    }
+    .header-profile{
+        height: 40px;
+    }
+    
+
+    /*------------PROFILE POSTS---------------*/
+    .profile-posts{
+        width: 100%;
+        height: fit-content;
+        margin-top: -30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .picture{
+        height: 120px;    
+       }
+
+}
+
+
+/*------------------------------------------------------------RESPONSIVE FOR PROFILE------------------------------------*/  
+@media only screen and (max-width:800px) and (min-width:700px){
+    
+    
+    /*-------------section-----------*/
+    .section-profile{    
+        width: 80%;
+        margin-top: 60px;
+    }
+
+    /*BUTTONS*/
+    /*.button-width{
+        padding-left: 15px;
+        padding-right:15px;
+    }*/
+    .data-about-profile{
+        width: 80%;
+    }
+
+    
+ .highlights-frame{
+        width:85px;
+        height: 85px;
+    }
+    .highlight{
+        margin-top:20px;
+    }
+    .white-highlights{
+        width: 82px;
+        height: 82px;
+    }
+    .highlights-image{
+        width: 77px;
+        height:77px;
+    }
+   
+    .highlight-name{
+        font-size:20px
+    }
+    .profile-button{
+        font-size: 23px;
+    }
+    .profile-view{
+        margin-top: -25px;
+    }
+
+    /*------------NUMBERS IN HEADER------*/
+    .follower-number{
+        font-size: 30px;
+        font-weight:800;
+    }
+    .follower-block{      
+        margin: 10px;
+    }
+    .follower-name{
+        font-size: 20px;
+        margin-top: -20px;
+    }
+    .followed-by,.biography{
+        font-size:15px
+    }
+    .profile-name{
+        font-size: 16px;
+    }
+    .personalisation{
+        font-size:14px
+    }
+    
+ /*--------------IMAGE OF PROFILE AND HEADER---------*/
+    .profile-frame{
+        width: 110px;
+        height: 110px;       
+    }
+    .profile-white-frame{
+        width: 105px;
+        height: 105px;
+    }
+    .profile-image-pg{
+        width: 95px;
+        height: 95px;
+    }
+    .profile-username{
+        font-size: 20px;
+    }
+    .icon-option{
+        font-size: 20px;  
+    }
+    .header-profile{
+        height: 40px;
+    }
+    
+
+    /*------------PROFILE POSTS---------------*/
+    .profile-posts{
+        width: 100%;
+        height: fit-content;
+        margin-top: -30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .picture{
+        height: 150px;    
+       }
+}
+
+
+
+/*------------------------------------------------------------RESPONSIVE FOR PROFILE------------------------------------*/  
+@media only screen and (max-width:700px) and (min-width:500px){
+    
+    
+    /*-------------section-----------*/
+    .section-profile{    
+        width: 80%;
+        margin-top: 60px;
+    }
+
+    /*BUTTONS*/
+    /*.button-width{
+        padding-left: 15px;
+        padding-right:15px;
+    }*/
+    .data-about-profile{
+        width: 80%;
+    }
+    .marg-tag{
+        height: 110px;  
+        display: inline-block;
+        width: 32%;
+        margin:1px;
+        background-size: cover;
+    }
+    
+ .highlights-frame{
+        width:80px;
+        height: 80px;
+    }
+    .highlight{
+        margin-top:30px;
+    }
+    .white-highlights{
+        width: 75px;
+        height: 75px;
+    }
+    .highlights-image{
+        width: 70px;
+        height:70px;
+    }
+   
+    .highlight-name{
+        font-size:20px
+    }
+    .profile-button{
+        font-size: 23px;
+    }
+    .profile-view{
+        margin-top: -25px;
+    }
+
+    /*------------NUMBERS IN HEADER------*/
+    .follower-number{
+        font-size: 25px;
+        font-weight:800;
+    }
+    .follower-block{      
+        margin: 10px;
+    }
+    .follower-name{
+        font-size: 16px;
+        margin-top: -20px;
+    }
+    .followed-by,.biography{
+        font-size:15px
+    }
+    .profile-name{
+        font-size: 16px;
+    }
+    .personalisation{
+        font-size:14px
+    }
+    
+ /*--------------IMAGE OF PROFILE AND HEADER---------*/
+    .profile-frame{
+        width: 110px;
+        height: 110px;       
+    }
+    .profile-white-frame{
+        width: 105px;
+        height: 105px;
+    }
+    .profile-image-pg{
+        width: 95px;
+        height: 95px;
+    }
+    .profile-username{
+        font-size: 20px;
+    }
+    .icon-option{
+        font-size: 20px;  
+    }
+    .header-profile{
+        height: 40px;
+    }
+    
+
+    /*------------PROFILE POSTS---------------*/
+    .profile-posts{
+        width: 100%;
+        height: fit-content;
+        margin-top: -30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .picture{
+        height: 110px;    
+       }
+}
+
+
+
+/*------------------------------------------------------------RESPONSIVE FOR PROFILE------------------------------------*/  
+@media only screen and (max-width:480px) and (min-width:300px){
+    
+    /*-------------section-----------*/
+    .section-profile{    
+        width:100%;
+        margin-top: 60px;
+    }
+    .data-about-profile{
+        width: 100%;
+    }
+
+    
+ .highlights-frame{
+        width:70px;
+        height: 70px;
+    }
+    .highlight{
+        margin-top:15px;
+    }
+    .white-highlights{
+        width: 67px;
+        height: 67px;
+    }
+    .highlights-image{
+        width: 63px;
+        height:63px;
+    }
+   
+    .highlight-name{
+        font-size:17px;
+        margin-top: 5px;
+    }
+    .profile-button{
+        font-size: 23px;
+    }
+    .profile-view{
+        margin-top: -25px;
+    }
+
+    .profile-name-bio-type,.profile-functions,.header-content,.story-highlights{
+       margin-left: auto; 
+       margin-right: auto;
+        width: 95%;
+    }
+    /*FOLLOW BUTTONS*/
+
+
+    /*------------NUMBERS IN HEADER------*/
+    .follower-number{
+        font-size: 20px;
+        font-weight:800;
+    }
+    .follower-block{      
+        margin: 10px;
+    }
+    .follower-name{
+        font-size: 16px;
+        margin-top: -20px;
+    }
+    .followed-by,.biography{
+        font-size:13px
+    }
+    .profile-name{
+        font-size: 14px;
+        display:flex;
+        justify-content:center
+    }
+    .personalisation{
+        font-size:13px;
+        display:flex;
+        justify-content:center
+    }
+    
+ /*--------------IMAGE OF PROFILE AND HEADER---------*/
+    .profile-frame{
+        width: 97px;
+        height: 97px;       
+    }
+    .profile-white-frame{
+        width: 92px;
+        height: 92px;
+    }
+    .profile-image-pg{
+        width: 88px;
+        height: 88px;
+    }
+    .header-profile{
+        height: 40px;
+    }
+    
+
+    /*------------PROFILE POSTS---------------*/
+    .profile-posts{
+        width: 100%;
+        height: fit-content;
+        margin-top: -30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .picture{
+        height: 135px; 
+        margin:0px;
+        width: 32.55%;
+    }
+
+    .profile-notification{
+        width: fit-content;
+        font-size: 22px;
+    }
+    .profile-notification p{
+        font-size: 22px;
+    }
+    .button-width,.left-button{
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    .profile-functions{
+        margin-top:10px
+    }
+    .marg-tag{
+        height: 135px;  
+        display: inline-block;
+        width: 32.8%;
+        margin:1px;
+        background-size: cover;
+    }
+    .set-margin-right{
+        position: absolute;
+        right: -5px;
+    }
+    .set-margin-left{
+        position: absolute;
+        left: 10px;
+    }
+}
+/*------------------------------------------------------------RESPONSIVE FOR PROFILE------------------------------------*/  
